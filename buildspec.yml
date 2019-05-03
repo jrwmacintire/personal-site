@@ -1,18 +1,12 @@
 version: 0.2
 
 phases:
-  install:
-    commands:
-      - echo "I could install something here..."
   pre_build:
     commands:
       - echo "Cleaning 'build' folder before build commenses..."
-      - npm run clean
   build:
     commands:
       - echo "Building bundle..."
-      - npm run build
   post_build:
     commands:
       - echo "Updating S3 buckets with 'build' folder..."
-      - npm run update-buckets
