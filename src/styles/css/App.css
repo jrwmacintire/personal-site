@@ -1,9 +1,35 @@
-html body div#root .App .App-header {
-  background-color: lightgray;
-  min-height: 30vh;
+html body div#root .App {
+  font-size: 16px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white; }
+  flex-direction: column; }
+  html body div#root .App div {
+    margin: auto; }
+  html body div#root .App .Header {
+    background-color: lightgray;
+    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white; }
+  html body div#root .App .Main {
+    min-height: 70vh;
+    min-width: 65%; }
+    html body div#root .App .Main div {
+      display: flex;
+      padding: 2rem; }
+    html body div#root .App .Main h1 {
+      margin: auto; }
+    html body div#root .App .Main .About {
+      background-color: lightcyan; }
+    html body div#root .App .Main .Services {
+      background-color: lightpink; }
+    html body div#root .App .Main .Contact {
+      background-color: lightseagreen; }
+  html body div#root .App .Footer {
+    min-height: 15vh;
+    width: 100%;
+    display: flex;
+    background-color: darkorange;
+    justify-content: center; }
