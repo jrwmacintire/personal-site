@@ -1,12 +1,20 @@
 version: 0.2
 
 phases:
+  install:
+    commands:
+      - echo "Installing dependencies for 'johnmacintire.com' build..."
+      - npm install
   pre_build:
     commands:
-      - echo "Cleaning 'build' folder before build commenses..."
+      - echo "Cleaning 'build' folder and S3 buckets..."
+      - npm run clean
+      - npm run clean-buckets
   build:
     commands:
-      - echo "Building bundle..."
+      - echo "Bundling production version into 'build'..."
+      - npm run build
   post_build:
     commands:
-      - echo "Updating S3 buckets with 'build' folder..."
+      - echo "Update S3 bucket hosting 'johnmacintire.com'..."
+      - npm run update-s3-buckets
