@@ -18,3 +18,7 @@ phases:
     commands:
       - echo "Update S3 bucket hosting 'johnmacintire.com'..."
       - npm run sync-bucket
+
+cache:
+  paths:
+    - '/node_modules/**/*'
