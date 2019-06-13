@@ -1,18 +1,41 @@
+/* Coolors Exported Palette - coolors.co/00131c-053d5b-f9f9ed-ff5e07-dbd0c9 */
+/* HSL */
+/* RGB */
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap");
+.About {
+  background-color: #00131c; }
+  .About * {
+    color: #f9f9ed; }
+
+.Header {
+  background-color: #dbd0c9;
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #f9f9ed; }
+
+.Footer {
+  min-height: 15vh;
+  width: 100%;
+  display: flex;
+  background-color: #ff5e07;
+  justify-content: center; }
+
+.Services {
+  background-color: #f9f9ed; }
+
+.Contact {
+  background-color: #053d5b; }
+
 html body div#root .App {
   font-size: 16px;
   display: flex;
   flex-direction: column; }
   html body div#root .App div {
     margin: auto; }
-  html body div#root .App .Header {
-    background-color: lightgray;
-    min-height: 15vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white; }
   html body div#root .App .Main {
     min-height: 70vh;
     min-width: 65%; }
@@ -21,15 +44,3 @@ html body div#root .App {
       padding: 2rem; }
     html body div#root .App .Main h1 {
       margin: auto; }
-    html body div#root .App .Main .About {
-      background-color: lightcyan; }
-    html body div#root .App .Main .Services {
-      background-color: lightpink; }
-    html body div#root .App .Main .Contact {
-      background-color: lightseagreen; }
-  html body div#root .App .Footer {
-    min-height: 15vh;
-    width: 100%;
-    display: flex;
-    background-color: darkorange;
-    justify-content: center; }
