@@ -15,7 +15,8 @@
     "scss": "node-sass -w src/styles/scss/ -o src/styles/css/",
     "clean": "rm -rf ./build",
     "clean-build": "npm run clean && npm run build",
-    "update-s3-buckets": "aws s3 sync ./build s3://new-jrwm3-site && aws s3 cp s3://new-jrwm3-site s3://new-jrwm3-site --exclude '*' --metadata-directive REPLACE --acl public-read --recursive && aws s3 cp s3://new-jrwm3-site s3://new-jrwm3-site --include 'index.html' --cache-control 'max-age=0'",
+    "sync-bucket": "aws s3 sync ./build s3://new-jrwm3-site --acl public-read",
+    "add-index": "aws s3 cp ./build/index.html s3://new-jrwm3-site/index.html --metadata-directive REPLACE --cache-control max-age=0,no-cache,no-store,must-revalidate --acl public-read",
     "clean-buckets": "aws s3 rm s3://new-jrwm3-site --recursive --exclude '*' --include 'static/**/*' --include 'precache-manifest.*'",
     "deploy-to-s3": "npm run clean-build && npm run clean-buckets && npm run update-s3-buckets"
   },

@@ -17,4 +17,4 @@ phases:
   post_build:
     commands:
       - echo "Update S3 bucket hosting 'johnmacintire.com'..."
-      - npm run update-s3-buckets
+      - npm run sync-buckets
