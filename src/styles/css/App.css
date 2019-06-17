@@ -2,20 +2,35 @@
 /* HSL */
 /* RGB */
 @import url("https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap");
+.Main {
+  min-height: 70vh;
+  min-width: 65%;
+  font-family: 'Roboto', sans-serif; }
+  .Main div {
+    display: flex;
+    padding: 2rem; }
+
 .About {
-  background-color: #00131c; }
+  background-color: #053d5b; }
   .About * {
     color: #f9f9ed; }
 
+/* Coolors Exported Palette - coolors.co/00131c-053d5b-f9f9ed-ff5e07-dbd0c9 */
+/* HSL */
+/* RGB */
 .Header {
-  background-color: #dbd0c9;
-  min-height: 15vh;
+  background-color: #00131c;
+  width: 100%;
+  min-height: 11vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #f9f9ed; }
+  .Header h3.title {
+    margin: auto 2rem; }
+  .Header div.nav-links {
+    margin: auto 2rem;
+    display: inline-block;
+    text-align: right; }
 
 .Footer {
   min-height: 15vh;
@@ -32,15 +47,6 @@
 
 html body div#root .App {
   font-size: 16px;
+  font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column; }
-  html body div#root .App div {
-    margin: auto; }
-  html body div#root .App .Main {
-    min-height: 70vh;
-    min-width: 65%; }
-    html body div#root .App .Main div {
-      display: flex;
-      padding: 2rem; }
-    html body div#root .App .Main h1 {
-      margin: auto; }

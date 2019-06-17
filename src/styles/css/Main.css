@@ -1,0 +1,7 @@
+.Main {
+  min-height: 70vh;
+  min-width: 65%;
+  font-family: 'Roboto', sans-serif; }
+  .Main div {
+    display: flex;
+    padding: 2rem; }
