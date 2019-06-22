@@ -1,7 +1,15 @@
 .Footer {
-    min-height: 15vh;
+    min-height: 10vh;
     width: 100%;
     display: flex;
-    background-color: $rgbOrange;
+    background-color: $gray;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+        color: $rgbWhite;
+        margin: 0.3rem;
+        padding: 0 1rem;
+    }
 }

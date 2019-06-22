@@ -1,14 +1,22 @@
 @import './palette.scss';
 @import './Main.scss';
 @import './About.scss';
-@import './Header.scss';
 @import './Footer.scss';
 @import './Services.scss';
 @import './Contact.scss';
+@import './Navbar.scss';
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
 
 html {
+    margin: 0;
+    padding: 0;
+
     body {
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
         div#root {
             .App {
                 font-size: 16px;

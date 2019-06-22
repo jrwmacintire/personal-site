@@ -1,16 +1,28 @@
 import React, { Component } from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 
 class Header extends Component {
     render() {
         return (
-            <header className="Header">
-                <h3 className="title">JohnMacIntire.com</h3>
-                <div className="nav-links">
-                    <a href="/contact">Contact</a>
-                    <a href="/services">Services</a>
-                    <a href="/about">About</a>
-                </div>
-            </header>
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" className="Navbar">
+                <Navbar.Brand href="https://johnmacintire.com">JohnMacIntire.com</Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="ml-auto">
+                        <Nav.Item>
+                            <Nav.Link href="/contact">Contact</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="/solutions">Solutions</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="/certifications">Certifications</Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
         )
     }
 }
