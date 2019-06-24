@@ -1,5 +1,8 @@
+@import './palette.scss';
+
 .About {
-    background-color: $rgbBlue;
+    background-color: $rgbWhite;
+    height: 100%;
 
     * {
         color: $rgbWhite;

@@ -5,11 +5,12 @@
     display: flex;
     flex-direction: column;
     margin: 5rem auto;
-    padding: 1rem;
+    padding: 2rem;
     width: 70vw;
+    height: auto;
 
     @media (max-width: 449px) {
-        padding: 1rem;
+        padding: 0.5rem;
         width: 96vw;
         margin: 2rem auto;
     }
@@ -79,5 +80,19 @@
         padding: 1rem;
         font-size: 1.3rem;
         letter-spacing: 1px;
+        background-color: $hslBlue;
+    }
+
+    button:hover {
+        background-color: $hslBlueHover;
+        font-size: 1.4rem;
+    }
+
+    div.required-field-notice {
+        display: flex;
+
+        small {
+            margin: 0.2rem auto;
+        }
     }
 }

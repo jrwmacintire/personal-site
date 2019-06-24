@@ -9,7 +9,7 @@ export default class Experience extends Component {
         return (
             <div className="Contact" >
                 <h1>Contact</h1>
-                <Form>
+                <Form className='Form'>
                   <Form.Group as={Row} controlId="name">
                     <Form.Label column sm={3} xs={3}>
                       Full Name :
@@ -44,6 +44,8 @@ export default class Experience extends Component {
                       <Form.Control as="textarea" type="message" rows="3" placeholder="Enter your message here..." />
                     </Col>
                   </Form.Group>
+
+                  <div className='required-field-notice'><small>Fields with an * are required.</small></div>
 
                   <Form.Group as={Row}>
                     <Col>

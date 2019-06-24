@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
@@ -6,19 +7,19 @@ class Header extends Component {
     render() {
         return (
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" className="Navbar">
-                <Navbar.Brand href="/">JohnMacIntire.com</Navbar.Brand>
+                <Link className='navbar-brand' to="/">JohnMacIntire.com</Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
                         <Nav.Item>
-                            <Nav.Link href="/contact">Contact</Nav.Link>
+                            <Link to="/contact" className='nav-link'>Contact</Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="/solutions">Solutions</Nav.Link>
+                            <Link to="/solutions" className='nav-link'>Solutions</Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="/certifications">Certifications</Nav.Link>
+                            <Link to="/certifications" className='nav-link'>Certifications</Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>

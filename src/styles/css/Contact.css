@@ -6,11 +6,12 @@
   display: flex;
   flex-direction: column;
   margin: 5rem auto;
-  padding: 1rem;
-  width: 70vw; }
+  padding: 2rem;
+  width: 70vw;
+  height: auto; }
   @media (max-width: 449px) {
     .Contact {
-      padding: 1rem;
+      padding: 0.5rem;
       width: 96vw;
       margin: 2rem auto; } }
   @media (min-width: 450px) {
@@ -58,4 +59,12 @@
     margin: 1rem auto;
     padding: 1rem;
     font-size: 1.3rem;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    background-color: #0793df; }
+  .Contact button:hover {
+    background-color: #34b4f9;
+    font-size: 1.4rem; }
+  .Contact div.required-field-notice {
+    display: flex; }
+    .Contact div.required-field-notice small {
+      margin: 0.2rem auto; }

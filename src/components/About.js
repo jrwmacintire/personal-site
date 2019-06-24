@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Portrait from '../images/kiama-nsw-au.png';
 
 export default class About extends Component {
     render() {
         return (
             <div className="About" >
-                <h1>About</h1>
+                <img src={ Portrait } alt='Kiama, New South Wales, Australia' />
             </div>
         )
     }

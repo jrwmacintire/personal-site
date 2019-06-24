@@ -7,22 +7,22 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
 
 html {
-    margin: 0;
-    padding: 0;
+    height: 100%;
 
     body {
-        height: auto;
-        width: 100%;
-        margin: 0;
-        padding: 0;
+        height: auto;    
 
         div#root {
+            height: 100%;
+            margin-top: 8vh;
+
             .App {
+                height: 100%;
                 font-size: 16px;
                 font-family: 'Lato', sans-serif;
                 display: flex;
                 flex-direction: column;
-                margin-top: 8vh;
+                margin: 8vh 0;
             }
         }
     }

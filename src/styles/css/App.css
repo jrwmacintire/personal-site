@@ -1,9 +1,13 @@
 /* Coolors Exported Palette - coolors.co/00131c-053d5b-f9f9ed-ff5e07-dbd0c9 */
 /* HSL */
 /* RGB */
+/* Coolors Exported Palette - coolors.co/00131c-053d5b-f9f9ed-ff5e07-dbd0c9 */
+/* HSL */
+/* RGB */
 @import url("https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap");
 .About {
-  background-color: #053d5b; }
+  background-color: #f9f9ed;
+  height: 100%; }
   .About * {
     color: #f9f9ed; }
 
@@ -31,11 +35,12 @@
   display: flex;
   flex-direction: column;
   margin: 5rem auto;
-  padding: 1rem;
-  width: 70vw; }
+  padding: 2rem;
+  width: 70vw;
+  height: auto; }
   @media (max-width: 449px) {
     .Contact {
-      padding: 1rem;
+      padding: 0.5rem;
       width: 96vw;
       margin: 2rem auto; } }
   @media (min-width: 450px) {
@@ -83,7 +88,15 @@
     margin: 1rem auto;
     padding: 1rem;
     font-size: 1.3rem;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    background-color: #0793df; }
+  .Contact button:hover {
+    background-color: #34b4f9;
+    font-size: 1.4rem; }
+  .Contact div.required-field-notice {
+    display: flex; }
+    .Contact div.required-field-notice small {
+      margin: 0.2rem auto; }
 
 /* Coolors Exported Palette - coolors.co/00131c-053d5b-f9f9ed-ff5e07-dbd0c9 */
 /* HSL */
@@ -104,16 +117,16 @@
     margin: 0 0.5rem; }
 
 html {
-  margin: 0;
-  padding: 0; }
+  height: 100%; }
   html body {
-    height: auto;
-    width: 100%;
-    margin: 0;
-    padding: 0; }
-    html body div#root .App {
-      font-size: 16px;
-      font-family: 'Lato', sans-serif;
-      display: flex;
-      flex-direction: column;
+    height: auto; }
+    html body div#root {
+      height: 100%;
       margin-top: 8vh; }
+      html body div#root .App {
+        height: 100%;
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+        display: flex;
+        flex-direction: column;
+        margin: 8vh 0; }
