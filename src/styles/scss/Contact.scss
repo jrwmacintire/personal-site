@@ -1,26 +1,83 @@
+@import './palette.scss';
+
 .Contact {
-    background-color: $rgbWhite;
+    background-color: $hslLightGray;
     display: flex;
     flex-direction: column;
-    min-width: 50%;
-    margin: 3rem auto;
+    margin: 5rem auto;
+    padding: 1rem;
+    width: 70vw;
+
+    @media (max-width: 449px) {
+        padding: 1rem;
+        width: 96vw;
+        margin: 2rem auto;
+    }
+
+    @media (min-width: 450px) {
+        max-width: 85vw;
+    }
+
+    @media (min-width: 660px) {
+        max-width: 65vw;
+    }
+
+    @media (min-width: 960px) {
+        max-width: 45vw;
+    }
+
+    @media (min-width: 1300px) {
+        max-width: 30vw;
+    }
 
     h1 {
-        margin: 0 auto 2rem;
+        margin: 1.6rem auto;
+        font-weight: bold;
+        letter-spacing: 2px;
     }
 
     .form-group {
         padding: 0;
-        margin: 0;
+        margin: 0.4rem 0;
+        flex-flow: nowrap;
     }
 
     label {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
         margin: auto;
         padding: 0;
+        text-align: right;
+
+        @media (max-width: 500px) {
+            font-size: 0.8rem;
+        }
     }
 
     .col-sm-9 {
+        padding: 0.7rem;
+    }
+
+    input {
+        font-size: 0.9rem;
+
+        @media (max-width: 500px) {
+            font-size: 0.8rem;
+        }
+    }
+
+    textarea {
+        @media (max-width: 500px) {
+            font-size: 0.8rem;
+        }
+    }
+
+    button {
+        width: 100%;
+        margin: 1rem auto;
         padding: 1rem;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
     }
 }

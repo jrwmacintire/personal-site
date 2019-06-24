@@ -7,37 +7,46 @@ import Col from 'react-bootstrap/Col';
 export default class Experience extends Component {
     render() {
         return (
-            <div className="Contact fluid" >
+            <div className="Contact" >
                 <h1>Contact</h1>
                 <Form>
-                <Form.Group as={Row} controlId="name">
-                    <Form.Label column sm={3}>
-                      Full Name:
+                  <Form.Group as={Row} controlId="name">
+                    <Form.Label column sm={3} xs={3}>
+                      Full Name :
                     </Form.Label>
-                    <Col sm={9}>
+                    <Col sm={9} xs={9}>
                       <Form.Control type="name" placeholder="Name" />
                     </Col>
                   </Form.Group>
                   <Form.Group as={Row} controlId="email">
-                    <Form.Label column sm={3}>
-                      Email:
+                    <Form.Label column sm={3} xs={3}>
+                      Email :
                     </Form.Label>
-                    <Col sm={9}>
+                    <Col sm={9} xs={9}>
                       <Form.Control type="email" placeholder="Email" />
                     </Col>
                   </Form.Group>
 
                   <Form.Group as={Row} controlId="phone">
-                    <Form.Label column sm={3}>
-                      Phone:
+                    <Form.Label column sm={3} xs={3}>
+                      Phone :
                     </Form.Label>
-                    <Col sm={9}>
+                    <Col sm={9} xs={9}>
                       <Form.Control type="phone" placeholder="Phone Number" />
                     </Col>
                   </Form.Group>
 
+                  <Form.Group as={Row} controlId="message">
+                    <Form.Label column sm={3} xs={3}>
+                      Message :
+                    </Form.Label>
+                    <Col sm={9} xs={9}>
+                      <Form.Control as="textarea" type="message" rows="3" placeholder="Enter your message here..." />
+                    </Col>
+                  </Form.Group>
+
                   <Form.Group as={Row}>
-                    <Col sm={{ span: 9, offset: 3 }}>
+                    <Col>
                       <Button type="submit">Submit</Button>
                     </Col>
                   </Form.Group>

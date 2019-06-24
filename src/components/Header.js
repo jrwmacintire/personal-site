@@ -6,7 +6,7 @@ class Header extends Component {
     render() {
         return (
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" className="Navbar">
-                <Navbar.Brand href="https://johnmacintire.com">JohnMacIntire.com</Navbar.Brand>
+                <Navbar.Brand href="/">JohnMacIntire.com</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 
                 <Navbar.Collapse id="responsive-navbar-nav">

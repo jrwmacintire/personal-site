@@ -1,3 +1,5 @@
+@import './palette.scss';
+
 .Navbar {
     min-height: 8vh;
     font-family: 'Lato', sans-serif;
@@ -5,10 +7,17 @@
 
     .navbar-brand {
         font-size: 1.7rem;
-        color: $rgbOrange !important;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: $hslLightOrange !important;
+    }
+
+    .navbar-brand:hover {
+        color: $hslOrange !important;
     }
 
     .nav-link {
         color: $rgbWhite;
+        margin: 0 0.5rem;
     }
 }

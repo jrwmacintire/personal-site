@@ -1,6 +1,6 @@
 .Main {
   height: 100%;
-  min-width: 65%;
+  max-width: 65%;
   font-family: 'Roboto', sans-serif;
   margin: 8vh 0; }
   .Main div {

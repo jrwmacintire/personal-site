@@ -1,31 +1,6 @@
 /* Coolors Exported Palette - coolors.co/00131c-053d5b-f9f9ed-ff5e07-dbd0c9 */
 /* HSL */
 /* RGB */
-@import url("https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap");
-.About {
-  background-color: #053d5b; }
-  .About * {
-    color: #f9f9ed; }
-
-.Footer {
-  min-height: 10vh;
-  width: 100%;
-  display: flex;
-  background-color: #343a40;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; }
-  .Footer p {
-    color: #f9f9ed;
-    margin: 0.3rem;
-    padding: 0 1rem; }
-
-.Services {
-  background-color: #f9f9ed; }
-
-/* Coolors Exported Palette - coolors.co/00131c-053d5b-f9f9ed-ff5e07-dbd0c9 */
-/* HSL */
-/* RGB */
 .Contact {
   background-color: #edeae9;
   display: flex;
@@ -84,36 +59,3 @@
     padding: 1rem;
     font-size: 1.3rem;
     letter-spacing: 1px; }
-
-/* Coolors Exported Palette - coolors.co/00131c-053d5b-f9f9ed-ff5e07-dbd0c9 */
-/* HSL */
-/* RGB */
-.Navbar {
-  min-height: 8vh;
-  font-family: 'Lato', sans-serif;
-  letter-spacing: 1px; }
-  .Navbar .navbar-brand {
-    font-size: 1.7rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #ec6218 !important; }
-  .Navbar .navbar-brand:hover {
-    color: #ff5d05 !important; }
-  .Navbar .nav-link {
-    color: #f9f9ed;
-    margin: 0 0.5rem; }
-
-html {
-  margin: 0;
-  padding: 0; }
-  html body {
-    height: auto;
-    width: 100%;
-    margin: 0;
-    padding: 0; }
-    html body div#root .App {
-      font-size: 16px;
-      font-family: 'Lato', sans-serif;
-      display: flex;
-      flex-direction: column;
-      margin-top: 8vh; }
