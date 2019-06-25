@@ -1,11 +1,9 @@
 @import './palette.scss';
 
 .About {
-    background-color: $rgbWhite;
     height: 100%;
-
-    * {
-        color: $rgbWhite;
-    }
+    width: 100%;
+    background-color: $hslWhite;
+    margin: 0 !important;
 
 }

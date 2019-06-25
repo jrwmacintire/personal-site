@@ -2,7 +2,7 @@
 /* HSL */
 /* RGB */
 .About {
-  background-color: #f9f9ed;
-  height: 100%; }
-  .About * {
-    color: #f9f9ed; }
+  height: 100%;
+  width: 100%;
+  background-color: #f9f9ec;
+  margin: 0 !important; }
