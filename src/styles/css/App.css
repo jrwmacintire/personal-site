@@ -8,20 +8,37 @@
 .About {
   height: 100%;
   width: 100%;
-  background-color: #f9f9ec;
-  margin: 0 !important; }
+  margin: 5rem auto !important; }
+  .About .about-bio-row .about-bio-col {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; }
+    .About .about-bio-row .about-bio-col .about-info-wrapper {
+      display: flex;
+      flex-flow: column nowrap; }
+      .About .about-bio-row .about-bio-col .about-info-wrapper .about-contact-link {
+        background-color: #ffac80;
+        padding: 0.5rem;
+        width: 70%;
+        color: #f9f9ec;
+        text-align: center;
+        letter-spacing: 1px;
+        text-decoration: none; }
+      .About .about-bio-row .about-bio-col .about-info-wrapper .about-contact-link:hover {
+        font-weight: 600;
+        letter-spacing: 2px; }
 
 .Footer {
-  min-height: 10vh;
+  min-height: 12vh;
   width: 100%;
   display: flex;
-  background-color: #343a40;
+  background-color: #525b64;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
   .Footer p {
     color: #f9f9ed;
-    margin: 0.3rem;
+    margin: 0.5rem;
     padding: 0 1rem; }
 
 .Services {
@@ -31,7 +48,6 @@
 /* HSL */
 /* RGB */
 .Contact {
-  background-color: #edeae9;
   display: flex;
   flex-direction: column;
   margin: 3rem auto;
@@ -65,7 +81,6 @@
     flex-flow: nowrap; }
   .Contact label {
     font-size: 1rem;
-    font-weight: 600;
     letter-spacing: 0.5px;
     margin: auto;
     padding: 0;
@@ -104,31 +119,34 @@
 .Navbar {
   min-height: 8vh;
   font-family: 'Lato', sans-serif;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  background-color: #525b64; }
   .Navbar .navbar-brand {
     font-size: 1.7rem;
     font-weight: 500;
     letter-spacing: 1px;
-    color: #ec6218 !important; }
+    color: #ffac80 !important; }
   .Navbar .navbar-brand:hover {
-    color: #ff5d05 !important; }
+    color: #d45511 !important; }
   .Navbar .nav-link {
-    color: #f9f9ed;
+    color: white !important;
     margin: 0 0.5rem; }
+  .Navbar .nav-link:hover {
+    color: #f9ae86 !important; }
 
 html {
   height: 100%;
-  background-color: #f9f9ec; }
+  background-color: whitesmoke; }
   html body {
-    height: 100%; }
+    height: auto; }
     html body div#root {
-      height: 100%;
+      height: auto;
       margin-top: 8vh; }
       html body div#root .App {
-        height: 100%;
+        height: auto;
         font-size: 16px;
         font-family: 'Lato', sans-serif;
         display: flex;
         flex-direction: column;
         margin: 8vh 0;
-        background-color: #f9f9ec; }
+        background-color: whitesmoke; }

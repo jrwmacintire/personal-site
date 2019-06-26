@@ -4,5 +4,22 @@
 .About {
   height: 100%;
   width: 100%;
-  background-color: #f9f9ec;
-  margin: 0 !important; }
+  margin: 5rem auto !important; }
+  .About .about-bio-row .about-bio-col {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; }
+    .About .about-bio-row .about-bio-col .about-info-wrapper {
+      display: flex;
+      flex-flow: column nowrap; }
+      .About .about-bio-row .about-bio-col .about-info-wrapper .about-contact-link {
+        background-color: #ffac80;
+        padding: 0.5rem;
+        width: 70%;
+        color: #f9f9ec;
+        text-align: center;
+        letter-spacing: 1px;
+        text-decoration: none; }
+      .About .about-bio-row .about-bio-col .about-info-wrapper .about-contact-link:hover {
+        font-weight: 600;
+        letter-spacing: 2px; }

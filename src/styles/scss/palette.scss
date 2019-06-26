@@ -1,19 +1,19 @@
 /* Coolors Exported Palette - coolors.co/00131c-053d5b-f9f9ed-ff5e07-dbd0c9 */
 
-$gray: #343a40;
+$gray: hsl(210,10.3%,35.7%);
 
 /* HSL */
-$hslDarkBlue: hsla(199%, 100%, 5%, 1);
-$hslBlue: hsla(201%, 94%, 45%, 1);
-$hslBlueHover: hsla(201%, 94%, 59%, 1);
-$hslWhite: hsla(60%, 50%, 95%, 1);
-$hslOrange: hsla(21%, 100%, 51%, 1);
-$hslLightOrange: hsla(21%, 85%, 51%, 1);
-$hslLightGray: hsla(23%, 10%, 92%, 1);
+$hslDarkBlue: hsl(199, 100%, 5%);
+$hslBlue: hsl(201, 94%, 45%);
+$hslBlueHover: hsl(201, 94%, 59%);
+$hslWhite: hsl(60, 50%, 95%);
+$hslBrightOrange: hsl(21, 85%, 45%);
+$hslBaseOrange: hsl(21, 100%, 75%);
+$hslLightOrange: hsl(21, 90%, 75%);
+$hslLightGray: hsl(23, 5%, 72%);
 
 /* RGB */
 $rgbDarkBlue: rgba(0, 19, 28, 1);
 $rgbBlue: rgba(5, 61, 91, 1);
 $rgbWhite: rgba(249, 249, 237, 1);
 $rgbOrange: rgba(255, 94, 7, 1);
-$rgbLightGray: rgba(237, 234, 233, 1);

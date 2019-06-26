@@ -1,5 +1,5 @@
 .Footer {
-    min-height: 10vh;
+    min-height: 12vh;
     width: 100%;
     display: flex;
     background-color: $gray;
@@ -9,7 +9,7 @@
 
     p {
         color: $rgbWhite;
-        margin: 0.3rem;
+        margin: 0.5rem;
         padding: 0 1rem;
     }
 }

@@ -3,7 +3,35 @@
 .About {
     height: 100%;
     width: 100%;
-    background-color: $hslWhite;
-    margin: 0 !important;
+    margin: 5rem auto !important;
 
+    .about-bio-row {
+
+        .about-bio-col {
+            display: flex;
+            flex-direction: column;
+            // background-color: $hslLightGray;
+            padding: 1rem;
+
+            .about-info-wrapper {
+                display: flex;
+                flex-flow: column nowrap;
+
+                .about-contact-link {
+                    background-color: $hslBaseOrange;
+                    padding: 0.5rem;
+                    width: 70%;
+                    color: $hslWhite;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    text-decoration: none;
+                }
+
+                .about-contact-link:hover {
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
 }
