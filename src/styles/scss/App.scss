@@ -11,11 +11,11 @@ html {
     background-color: whitesmoke;
 
     body {
-        height: auto;    
+        height: 90%;
+        background-color: transparent; 
 
         div#root {
             height: auto;
-            margin-top: 8vh;
 
             .App {
                 height: auto;

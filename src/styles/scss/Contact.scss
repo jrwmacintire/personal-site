@@ -9,17 +9,9 @@
     height: auto;
 
     @media (max-width: 449px) {
-        padding: 0.5rem;
-        width: 96vw;
+        padding: 0.25rem;
+        width: 98vw;
         margin: 2rem auto;
-    }
-
-    @media (min-width: 450px) {
-        max-width: 85vw;
-    }
-
-    @media (min-width: 660px) {
-        max-width: 65vw;
     }
 
     @media (min-width: 960px) {
@@ -43,8 +35,7 @@
     }
 
     label {
-        font-size: 1rem;
-        // font-weight: 600;
+        font-weight: 600;
         letter-spacing: 0.5px;
         margin: auto;
         padding: 0;

@@ -4,17 +4,17 @@
     min-height: 8vh;
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
-    background-color: $gray;
+    background-color: $hslBlueGray !important;
 
     .navbar-brand {
         font-size: 1.7rem;
         font-weight: 500;
         letter-spacing: 1px;
-        color: $hslBaseOrange !important;
+        color: $hslLightOrange !important;
     }
 
     .navbar-brand:hover {
-        color: $hslBrightOrange !important;
+        color: $hslBaseOrange !important;
     }
 
     .nav-link {
@@ -25,4 +25,8 @@
     .nav-link:hover {
         color: $hslLightOrange !important;
     }
+
+    // .navbar-toggler-icon {
+    //     color: whitesmoke !important;
+    // }
 }

@@ -8,25 +8,67 @@
 .About {
   height: 100%;
   width: 100%;
-  margin: 5rem auto !important; }
-  .About .about-bio-row .about-bio-col {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem; }
-    .About .about-bio-row .about-bio-col .about-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .About .about-bio-row {
+    height: auto;
+    margin: 12vh auto 3vh; }
+    @media (max-width: 768px) {
+      .About .about-bio-row {
+        margin: 2vh auto; } }
+    @media (max-width: 992px) {
+      .About .about-bio-row {
+        margin: 4vh auto; } }
+    .About .about-bio-row .about-bio-col {
       display: flex;
-      flex-flow: column nowrap; }
-      .About .about-bio-row .about-bio-col .about-info-wrapper .about-contact-link {
-        background-color: #ffac80;
-        padding: 0.5rem;
-        width: 70%;
-        color: #f9f9ec;
-        text-align: center;
-        letter-spacing: 1px;
-        text-decoration: none; }
-      .About .about-bio-row .about-bio-col .about-info-wrapper .about-contact-link:hover {
-        font-weight: 600;
-        letter-spacing: 2px; }
+      flex-direction: column;
+      padding: 1rem; }
+      .About .about-bio-row .about-bio-col .about-info-wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        font-size: 1.1rem;
+        align-items: center; }
+        .About .about-bio-row .about-bio-col .about-info-wrapper .about-contact-link {
+          background-color: #ff955c;
+          margin: auto auto 2rem;
+          padding: 0.5rem;
+          width: 70%;
+          color: white !important;
+          text-align: center;
+          letter-spacing: 1px;
+          text-decoration: none; }
+        .About .about-bio-row .about-bio-col .about-info-wrapper .about-contact-link:hover {
+          background-color: #ff7429; }
+  .About .about-social-row {
+    height: auto;
+    margin: 3vh 0 9vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap; }
+    @media (max-width: 768px) {
+      .About .about-social-row {
+        padding: 0.5rem 1.5rem;
+        margin: 2vh 0 5vh; } }
+    @media (max-width: 768px) {
+      .About .about-social-row .col-lg-4, .About .about-social-row .col-md-4, .About .about-social-row .col-sm-4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; } }
+    .About .about-social-row .about-social-media-link {
+      border-radius: 1px;
+      background-color: #a0c5da;
+      border: 1px solid lightgray;
+      padding: 1rem 1rem;
+      letter-spacing: 1px; }
+      @media (max-width: 576px) {
+        .About .about-social-row .about-social-media-link {
+          padding: 0.5rem 1rem;
+          margin: 0.5rem auto; } }
+    .About .about-social-row .about-social-media-link:hover {
+      background-color: #7bafcc; }
+  .About .light-gray-shadow {
+    box-shadow: 0 2px 7px #b3b3b3; }
 
 .Footer {
   min-height: 12vh;
@@ -56,15 +98,9 @@
   height: auto; }
   @media (max-width: 449px) {
     .Contact {
-      padding: 0.5rem;
-      width: 96vw;
+      padding: 0.25rem;
+      width: 98vw;
       margin: 2rem auto; } }
-  @media (min-width: 450px) {
-    .Contact {
-      max-width: 85vw; } }
-  @media (min-width: 660px) {
-    .Contact {
-      max-width: 65vw; } }
   @media (min-width: 960px) {
     .Contact {
       max-width: 45vw; } }
@@ -80,7 +116,7 @@
     margin: 0.4rem 0;
     flex-flow: nowrap; }
   .Contact label {
-    font-size: 1rem;
+    font-weight: 600;
     letter-spacing: 0.5px;
     margin: auto;
     padding: 0;
@@ -120,28 +156,28 @@
   min-height: 8vh;
   font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
-  background-color: #525b64; }
+  background-color: #38718f !important; }
   .Navbar .navbar-brand {
     font-size: 1.7rem;
     font-weight: 500;
     letter-spacing: 1px;
-    color: #ffac80 !important; }
+    color: #f2d1c0 !important; }
   .Navbar .navbar-brand:hover {
-    color: #d45511 !important; }
+    color: #ff955c !important; }
   .Navbar .nav-link {
     color: white !important;
     margin: 0 0.5rem; }
   .Navbar .nav-link:hover {
-    color: #f9ae86 !important; }
+    color: #f2d1c0 !important; }
 
 html {
   height: 100%;
   background-color: whitesmoke; }
   html body {
-    height: auto; }
+    height: 90%;
+    background-color: transparent; }
     html body div#root {
-      height: auto;
-      margin-top: 8vh; }
+      height: auto; }
       html body div#root .App {
         height: auto;
         font-size: 16px;

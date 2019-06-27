@@ -5,16 +5,16 @@
   min-height: 8vh;
   font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
-  background-color: #525b64; }
+  background-color: #38718f !important; }
   .Navbar .navbar-brand {
     font-size: 1.7rem;
     font-weight: 500;
     letter-spacing: 1px;
-    color: #ff8e52 !important; }
+    color: #f2d1c0 !important; }
   .Navbar .navbar-brand:hover {
-    color: #ff5d05 !important; }
+    color: #ff955c !important; }
   .Navbar .nav-link {
     color: white !important;
     margin: 0 0.5rem; }
   .Navbar .nav-link:hover {
-    color: #f9ae86 !important; }
+    color: #f2d1c0 !important; }

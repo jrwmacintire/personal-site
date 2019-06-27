@@ -3,9 +3,22 @@
 .About {
     height: 100%;
     width: 100%;
-    margin: 5rem auto !important;
+    // margin: 5rem auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .about-bio-row {
+        height: auto;
+        margin: 12vh auto 3vh;
+
+        @media (max-width: 768px) {
+            margin: 2vh auto;
+        }
+
+        @media (max-width: 992px) {
+            margin: 4vh auto;
+        }
 
         .about-bio-col {
             display: flex;
@@ -16,22 +29,67 @@
             .about-info-wrapper {
                 display: flex;
                 flex-flow: column nowrap;
+                font-size: 1.1rem;
+                align-items: center;
 
                 .about-contact-link {
                     background-color: $hslBaseOrange;
+                    margin: auto auto 2rem;
                     padding: 0.5rem;
                     width: 70%;
-                    color: $hslWhite;
+                    color: white !important;
                     text-align: center;
                     letter-spacing: 1px;
                     text-decoration: none;
                 }
 
                 .about-contact-link:hover {
-                    font-weight: 600;
-                    letter-spacing: 2px;
+                    background-color: darken($hslBaseOrange, 10);
                 }
             }
+            
         }
+    }
+
+    .about-social-row {
+        height: auto;
+        margin: 3vh 0 9vh;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+
+        @media (max-width: 768px) {
+            padding: 0.5rem 1.5rem;
+            margin: 2vh 0 5vh;
+        }
+
+        .col-lg-4, .col-md-4, .col-sm-4 {
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+
+        .about-social-media-link {
+            border-radius: 1px;
+            background-color: $hslBlueLightGray;
+            border: 1px solid lightgray;
+            padding: 1rem 1rem;
+            letter-spacing: 1px;
+
+            @media (max-width: 576px) {
+                padding: 0.5rem 1rem;
+                margin: 0.5rem auto;
+            }
+        }
+
+        .about-social-media-link:hover {
+            background-color: darken($hslBlueLightGray, 10);
+        }
+    }
+
+    .light-gray-shadow {
+        box-shadow: 0 2px 7px lighten(gray, 20);
     }
 }

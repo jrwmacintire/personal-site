@@ -12,7 +12,7 @@ export default class Experience extends Component {
                 <Form className='Form'>
                   <Form.Group as={Row} controlId="name">
                     <Form.Label column sm={3} xs={3}>
-                      Full Name :
+                      Full Name * :
                     </Form.Label>
                     <Col sm={9} xs={9}>
                       <Form.Control type="name" placeholder="Name" />
@@ -20,7 +20,7 @@ export default class Experience extends Component {
                   </Form.Group>
                   <Form.Group as={Row} controlId="email">
                     <Form.Label column sm={3} xs={3}>
-                      Email :
+                      Email * :
                     </Form.Label>
                     <Col sm={9} xs={9}>
                       <Form.Control type="email" placeholder="Email" />
@@ -38,7 +38,7 @@ export default class Experience extends Component {
 
                   <Form.Group as={Row} controlId="message">
                     <Form.Label column sm={3} xs={3}>
-                      Message :
+                      Message * :
                     </Form.Label>
                     <Col sm={9} xs={9}>
                       <Form.Control as="textarea" type="message" rows="3" placeholder="Enter your message here..." />
