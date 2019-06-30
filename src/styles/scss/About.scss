@@ -60,10 +60,12 @@
 
     .about-social-row {
         height: auto;
-        margin: 3vh auto 9vh;
+        width: 60%;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-flow: row wrap;
+        padding: 0.5rem;
+        background-color: darken(whitesmoke, 3);
 
         @media (max-width: 768px) {
             padding: 0.5rem 1.5rem;
@@ -82,7 +84,8 @@
             border-radius: 1px;
             background-color: $hslBlueLightGray;
             border: 1px solid lightgray;
-            padding: 1rem 1rem;
+            padding: 1rem;
+            margin: 0.5rem;
             letter-spacing: 1px;
 
             @media (max-width: 576px) {
@@ -94,9 +97,5 @@
         .about-social-media-link:hover {
             background-color: darken($hslBlueLightGray, 10);
         }
-    }
-
-    .light-gray-shadow {
-        box-shadow: 0 2px 7px lighten(gray, 20);
     }
 }

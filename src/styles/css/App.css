@@ -45,10 +45,12 @@
           background-color: #ff7429; }
   .About .about-social-row {
     height: auto;
-    margin: 3vh auto 9vh;
+    width: 60%;
     display: flex;
-    justify-content: center;
-    flex-flow: row wrap; }
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding: 0.5rem;
+    background-color: #ededed; }
     @media (max-width: 768px) {
       .About .about-social-row {
         padding: 0.5rem 1.5rem;
@@ -61,7 +63,8 @@
       border-radius: 1px;
       background-color: #a0c5da;
       border: 1px solid lightgray;
-      padding: 1rem 1rem;
+      padding: 1rem;
+      margin: 0.5rem;
       letter-spacing: 1px; }
       @media (max-width: 576px) {
         .About .about-social-row .about-social-media-link {
@@ -69,8 +72,6 @@
           margin: 0.5rem auto; } }
     .About .about-social-row .about-social-media-link:hover {
       background-color: #7bafcc; }
-  .About .light-gray-shadow {
-    box-shadow: 0 2px 7px #b3b3b3; }
 
 .Footer {
   min-height: 12vh;
@@ -115,7 +116,7 @@
     letter-spacing: 2px; }
   .Contact .form-group {
     padding: 0;
-    margin: 0.4rem 0;
+    margin: 1rem 0;
     flex-flow: nowrap; }
   .Contact label {
     font-weight: 600;
@@ -161,7 +162,7 @@
     font-size: 1.7rem;
     font-weight: 500;
     letter-spacing: 1px;
-    color: #f2d1c0 !important; }
+    color: #f9f9ec !important; }
   .Navbar .navbar-brand:hover {
     color: #ff955c !important; }
   .Navbar .nav-link {
@@ -169,6 +170,34 @@
     margin: 0 0.5rem; }
   .Navbar .nav-link:hover {
     color: #f2d1c0 !important; }
+
+/* Coolors Exported Palette - coolors.co/00131c-053d5b-f9f9ed-ff5e07-dbd0c9 */
+/* HSL */
+/* RGB */
+.Certifications .certifications-row {
+  display: flex;
+  justify-content: center; }
+  .Certifications .certifications-row .certifications-col {
+    margin: 3rem;
+    padding: 2rem;
+    background-color: whitesmoke; }
+    .Certifications .certifications-row .certifications-col h2 {
+      letter-spacing: 1px;
+      font-weight: bold;
+      color: #00111a;
+      margin: 1rem;
+      text-align: center; }
+    @media (max-width: 470px) {
+      .Certifications .certifications-row .certifications-col ul {
+        padding-left: 20px; } }
+    .Certifications .certifications-row .certifications-col ul li {
+      margin: 0.5rem;
+      font-size: 1.1rem;
+      line-height: 1.35; }
+      .Certifications .certifications-row .certifications-col ul li a {
+        color: #0793df; }
+      .Certifications .certifications-row .certifications-col ul li small {
+        color: gray; }
 
 html {
   height: 100%;
@@ -186,3 +215,7 @@ html {
         flex-direction: column;
         margin: 8vh 0;
         background-color: whitesmoke; }
+    html body .hr-divider {
+      background-color: #ff955c; }
+    html body .light-gray-shadow {
+      box-shadow: 0 3px 11px #cacaca; }

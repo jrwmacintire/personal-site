@@ -41,10 +41,12 @@
           background-color: #ff7429; }
   .About .about-social-row {
     height: auto;
-    margin: 3vh auto 9vh;
+    width: 60%;
     display: flex;
-    justify-content: center;
-    flex-flow: row wrap; }
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding: 0.5rem;
+    background-color: #ededed; }
     @media (max-width: 768px) {
       .About .about-social-row {
         padding: 0.5rem 1.5rem;
@@ -57,7 +59,8 @@
       border-radius: 1px;
       background-color: #a0c5da;
       border: 1px solid lightgray;
-      padding: 1rem 1rem;
+      padding: 1rem;
+      margin: 0.5rem;
       letter-spacing: 1px; }
       @media (max-width: 576px) {
         .About .about-social-row .about-social-media-link {
@@ -65,5 +68,3 @@
           margin: 0.5rem auto; } }
     .About .about-social-row .about-social-media-link:hover {
       background-color: #7bafcc; }
-  .About .light-gray-shadow {
-    box-shadow: 0 2px 7px #b3b3b3; }

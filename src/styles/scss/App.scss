@@ -4,6 +4,7 @@
 @import './Services.scss';
 @import './Contact.scss';
 @import './Navbar.scss';
+@import './Certifications.scss';
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
 
 html {
@@ -26,6 +27,14 @@ html {
                 margin: 8vh 0;
                 background-color: whitesmoke;
             }
+        }
+
+        .hr-divider {
+            background-color: $hslBaseOrange;
+        }
+
+        .light-gray-shadow {
+            box-shadow: 0 3px 11px lighten(gray, 29);
         }
     }
 }

@@ -1,0 +1,44 @@
+@import './palette.scss';
+
+.Certifications {
+
+    .certifications-row {
+        display: flex;
+        justify-content: center;
+
+        .certifications-col {
+            margin: 3rem;
+            padding: 2rem;
+            background-color: whitesmoke;
+
+            h2 {
+                letter-spacing: 1px;
+                font-weight: bold;
+                color: $hslDarkBlue;
+                margin: 1rem;
+                text-align: center;
+            }
+
+            ul {
+
+                @media (max-width: 470px) {
+                    padding-left: 20px;
+                }
+                
+                li {
+                    margin: 0.5rem;
+                    font-size: 1.1rem;
+                    line-height: 1.35;
+
+                    a {
+                        color: $hslBlue;
+                    }
+
+                    small {
+                        color: gray;
+                    }
+                }
+            }
+        }
+    }
+}

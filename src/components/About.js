@@ -25,15 +25,15 @@ export default class About extends Component {
                         </div>
                     </Col>
                 </Row>
-                <Row className='about-social-row'>
-                    <Col sm={4} md={4} lg={4}>
-                        <Button className='about-social-media-link light-gray-shadow' href='https://www.linkedin.com/in/john-macintire/'><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon> LinkedIn</Button>
+                <Row className='about-social-row light-gray-shadow'>
+                    <Col sm='true' md='true' lg='true'>
+                        <Button className='about-social-media-link' href='https://www.linkedin.com/in/john-macintire/'><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon> LinkedIn</Button>
                     </Col>
-                    <Col sm={4} md={4} lg={4}>
-                        <Button className='about-social-media-link light-gray-shadow' href='https://github.com/jrwmacintire'><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> Github</Button>
+                    <Col sm='true' md='true' lg='true'>
+                        <Button className='about-social-media-link' href='https://github.com/jrwmacintire'><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> Github</Button>
                     </Col>
-                    <Col sm={4} md={4} lg={4}>
-                        <Button className='about-social-media-link light-gray-shadow' href='https://www.freecodecamp.org/jrwmacintire'> FreeCodeCamp</Button>
+                    <Col sm='true' md='true' lg='true'>
+                        <Button className='about-social-media-link' href='https://www.freecodecamp.org/jrwmacintire'> FreeCodeCamp</Button>
                     </Col>
                 </Row>
             </Container>
