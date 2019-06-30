@@ -10,9 +10,12 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin: 0; }
   .About .about-bio-row {
     height: auto;
+    display: flex;
+    justify-content: center;
     margin: 12vh auto 3vh; }
     @media (max-width: 768px) {
       .About .about-bio-row {
@@ -31,7 +34,7 @@
         align-items: center; }
         .About .about-bio-row .about-bio-col .about-info-wrapper .about-contact-link {
           background-color: #ff955c;
-          margin: auto auto 2rem;
+          margin: 2rem auto;
           padding: 0.5rem;
           width: 70%;
           color: white !important;
@@ -42,18 +45,17 @@
           background-color: #ff7429; }
   .About .about-social-row {
     height: auto;
-    margin: 3vh 0 9vh;
+    margin: 3vh auto 9vh;
     display: flex;
     justify-content: center;
     flex-flow: row wrap; }
     @media (max-width: 768px) {
       .About .about-social-row {
         padding: 0.5rem 1.5rem;
-        margin: 2vh 0 5vh; } }
+        margin: 2vh auto 5vh; } }
     @media (max-width: 768px) {
       .About .about-social-row .col-lg-4, .About .about-social-row .col-md-4, .About .about-social-row .col-sm-4 {
         display: flex;
-        flex-direction: row;
         justify-content: center; } }
     .About .about-social-row .about-social-media-link {
       border-radius: 1px;
@@ -124,8 +126,6 @@
     @media (max-width: 500px) {
       .Contact label {
         font-size: 0.8rem; } }
-  .Contact .col-sm-9 {
-    padding: 0.7rem; }
   .Contact input {
     font-size: 0.9rem; }
     @media (max-width: 500px) {

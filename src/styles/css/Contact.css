@@ -36,8 +36,6 @@
     @media (max-width: 500px) {
       .Contact label {
         font-size: 0.8rem; } }
-  .Contact .col-sm-9 {
-    padding: 0.7rem; }
   .Contact input {
     font-size: 0.9rem; }
     @media (max-width: 500px) {

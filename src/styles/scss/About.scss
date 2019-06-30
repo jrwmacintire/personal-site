@@ -7,9 +7,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
 
     .about-bio-row {
         height: auto;
+        display: flex;
+        justify-content: center;
         margin: 12vh auto 3vh;
 
         @media (max-width: 768px) {
@@ -26,6 +29,10 @@
             // background-color: $hslLightGray;
             padding: 1rem;
 
+            // @media (min-width: 768px) {
+            //     margin: auto;
+            // }
+
             .about-info-wrapper {
                 display: flex;
                 flex-flow: column nowrap;
@@ -34,7 +41,7 @@
 
                 .about-contact-link {
                     background-color: $hslBaseOrange;
-                    margin: auto auto 2rem;
+                    margin: 2rem auto;
                     padding: 0.5rem;
                     width: 70%;
                     color: white !important;
@@ -53,20 +60,20 @@
 
     .about-social-row {
         height: auto;
-        margin: 3vh 0 9vh;
+        margin: 3vh auto 9vh;
         display: flex;
         justify-content: center;
         flex-flow: row wrap;
 
         @media (max-width: 768px) {
             padding: 0.5rem 1.5rem;
-            margin: 2vh 0 5vh;
+            margin: 2vh auto 5vh;
         }
 
         .col-lg-4, .col-md-4, .col-sm-4 {
+
             @media (max-width: 768px) {
                 display: flex;
-                flex-direction: row;
                 justify-content: center;
             }
         }
