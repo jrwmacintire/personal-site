@@ -7,15 +7,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0; }
+  background-color: #ebebeb;
+  margin-top: 8vh !important;
+  padding: 3rem;
+  border: 0.5px solid #e7e7e7; }
+  @media (max-width: 768px) {
+    .About {
+      margin: 0 auto !important; } }
+  @media (max-width: 560px) {
+    .About {
+      padding: 0; } }
   .About .about-bio-row {
     height: auto;
     display: flex;
     justify-content: center;
-    margin: 12vh auto 3vh; }
+    padding: 0.5rem; }
     @media (max-width: 768px) {
       .About .about-bio-row {
-        margin: 2vh auto; } }
+        margin: 2vh auto;
+        padding: 0; } }
     @media (max-width: 992px) {
       .About .about-bio-row {
         margin: 4vh auto; } }
@@ -23,6 +33,9 @@
       display: flex;
       flex-direction: column;
       padding: 1rem; }
+      @media (max-width: 400px) {
+        .About .about-bio-row .about-bio-col {
+          padding: 0 !important; } }
       .About .about-bio-row .about-bio-col .about-info-wrapper {
         display: flex;
         flex-flow: column nowrap;
@@ -45,16 +58,12 @@
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
-    padding: 0.5rem;
-    background-color: #ededed; }
+    padding: 0.25rem;
+    background-color: #e8e8e8; }
     @media (max-width: 768px) {
       .About .about-social-row {
         padding: 0.5rem 1.5rem;
         margin: 2vh auto 5vh; } }
-    @media (max-width: 768px) {
-      .About .about-social-row .col-lg-4, .About .about-social-row .col-md-4, .About .about-social-row .col-sm-4 {
-        display: flex;
-        justify-content: center; } }
     .About .about-social-row .about-social-media-link {
       border-radius: 1px;
       background-color: #a0c5da;

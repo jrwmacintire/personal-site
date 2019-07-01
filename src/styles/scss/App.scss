@@ -5,11 +5,12 @@
 @import './Contact.scss';
 @import './Navbar.scss';
 @import './Certifications.scss';
+@import './Solutions.scss';
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
 
 html {
     height: 100%;
-    background-color: whitesmoke;
+    background-color: darken(whitesmoke, 3);
 
     body {
         height: 90%;
@@ -25,7 +26,7 @@ html {
                 display: flex;
                 flex-direction: column;
                 margin: 8vh 0;
-                background-color: whitesmoke;
+                background-color: darken(whitesmoke, 3);
             }
         }
 
@@ -34,7 +35,26 @@ html {
         }
 
         .light-gray-shadow {
-            box-shadow: 0 3px 11px lighten(gray, 29);
+            box-shadow: 0 2px 9px lighten(gray, 29);
+        }
+
+        .lg-light-gray-shadow {
+            box-shadow: 0 5px 27px lighten(gray, 32);
+        }
+
+        .contact-link {
+            background-color: $hslBaseOrange;
+            margin: 2rem auto;
+            padding: 0.5rem;
+            width: 70%;
+            color: white !important;
+            text-align: center;
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+
+        .contact-link:hover {
+            background-color: darken($hslBaseOrange, 10);
         }
     }
 }

@@ -11,15 +11,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0; }
+  background-color: #ebebeb;
+  margin-top: 8vh !important;
+  padding: 3rem;
+  border: 0.5px solid #e7e7e7; }
+  @media (max-width: 768px) {
+    .About {
+      margin: 0 auto !important; } }
+  @media (max-width: 560px) {
+    .About {
+      padding: 0; } }
   .About .about-bio-row {
     height: auto;
     display: flex;
     justify-content: center;
-    margin: 12vh auto 3vh; }
+    padding: 0.5rem; }
     @media (max-width: 768px) {
       .About .about-bio-row {
-        margin: 2vh auto; } }
+        margin: 2vh auto;
+        padding: 0; } }
     @media (max-width: 992px) {
       .About .about-bio-row {
         margin: 4vh auto; } }
@@ -27,6 +37,9 @@
       display: flex;
       flex-direction: column;
       padding: 1rem; }
+      @media (max-width: 400px) {
+        .About .about-bio-row .about-bio-col {
+          padding: 0 !important; } }
       .About .about-bio-row .about-bio-col .about-info-wrapper {
         display: flex;
         flex-flow: column nowrap;
@@ -49,16 +62,12 @@
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
-    padding: 0.5rem;
-    background-color: #ededed; }
+    padding: 0.25rem;
+    background-color: #e8e8e8; }
     @media (max-width: 768px) {
       .About .about-social-row {
         padding: 0.5rem 1.5rem;
         margin: 2vh auto 5vh; } }
-    @media (max-width: 768px) {
-      .About .about-social-row .col-lg-4, .About .about-social-row .col-md-4, .About .about-social-row .col-sm-4 {
-        display: flex;
-        justify-content: center; } }
     .About .about-social-row .about-social-media-link {
       border-radius: 1px;
       background-color: #a0c5da;
@@ -96,20 +105,21 @@
   display: flex;
   flex-direction: column;
   margin: 3rem auto;
-  padding: 1rem;
-  width: 70vw;
-  height: auto; }
+  padding: 2rem;
+  width: 76vw;
+  height: auto;
+  background-color: whitesmoke; }
   @media (max-width: 449px) {
     .Contact {
       padding: 0.25rem;
       width: 98vw;
-      margin: 2rem auto; } }
+      margin: 1rem auto; } }
   @media (min-width: 960px) {
     .Contact {
-      max-width: 45vw; } }
+      max-width: 48vw; } }
   @media (min-width: 1300px) {
     .Contact {
-      max-width: 30vw; } }
+      max-width: 33vw; } }
   .Contact h1 {
     margin: 1.6rem auto;
     font-weight: bold;
@@ -141,10 +151,12 @@
     padding: 1rem;
     font-size: 1.3rem;
     letter-spacing: 1px;
-    background-color: #0793df; }
+    background-color: #ff955c;
+    border: 0;
+    border-radius: 2px; }
   .Contact button:hover {
-    background-color: #34b4f9;
-    font-size: 1.4rem; }
+    background-color: #f57d3d;
+    letter-spacing: 2px; }
   .Contact div.required-field-notice {
     display: flex; }
     .Contact div.required-field-notice small {
@@ -181,27 +193,70 @@
     margin: 3rem;
     padding: 2rem;
     background-color: whitesmoke; }
+    @media (max-width: 768px) {
+      .Certifications .certifications-row .certifications-col {
+        margin: 1.5rem;
+        padding: 1rem; } }
     .Certifications .certifications-row .certifications-col h2 {
       letter-spacing: 1px;
       font-weight: bold;
       color: #00111a;
       margin: 1rem;
       text-align: center; }
-    @media (max-width: 470px) {
-      .Certifications .certifications-row .certifications-col ul {
-        padding-left: 20px; } }
-    .Certifications .certifications-row .certifications-col ul li {
-      margin: 0.5rem;
-      font-size: 1.1rem;
-      line-height: 1.35; }
-      .Certifications .certifications-row .certifications-col ul li a {
-        color: #0793df; }
-      .Certifications .certifications-row .certifications-col ul li small {
-        color: gray; }
+    .Certifications .certifications-row .certifications-col ul {
+      margin: 2rem 0; }
+      @media (max-width: 470px) {
+        .Certifications .certifications-row .certifications-col ul {
+          padding-left: 20px;
+          margin: 1rem 0; } }
+      .Certifications .certifications-row .certifications-col ul li {
+        margin: 1rem;
+        font-size: 1.1rem;
+        line-height: 1.35; }
+        .Certifications .certifications-row .certifications-col ul li a {
+          color: #0793df; }
+        .Certifications .certifications-row .certifications-col ul li small {
+          color: gray; }
+
+/* Coolors Exported Palette - coolors.co/00131c-053d5b-f9f9ed-ff5e07-dbd0c9 */
+/* HSL */
+/* RGB */
+.Solutions .solutions-row {
+  display: flex;
+  justify-content: center;
+  width: 100% !important;
+  margin: 2rem auto; }
+  @media (max-width: 768px) {
+    .Solutions .solutions-row {
+      margin: 1rem 0; } }
+  .Solutions .solutions-row .solutions-col {
+    margin: 1rem;
+    padding: 2rem;
+    background-color: whitesmoke; }
+    @media (max-width: 768px) {
+      .Solutions .solutions-row .solutions-col {
+        margin: 0.5rem; } }
+    .Solutions .solutions-row .solutions-col h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-align: center;
+      margin: 1rem 0 2rem; }
+  .Solutions .solutions-row div.solutions-contact-link-wrapper {
+    width: 100%;
+    display: flex;
+    margin: 3rem 0 1rem; }
+    .Solutions .solutions-row div.solutions-contact-link-wrapper .solutions-contact {
+      font-size: 1.2rem;
+      margin: auto;
+      padding: 1rem 2rem;
+      letter-spacing: 1px; }
+    .Solutions .solutions-row div.solutions-contact-link-wrapper .solutions-contact:hover {
+      letter-spacing: 2px; }
 
 html {
   height: 100%;
-  background-color: whitesmoke; }
+  background-color: #ededed; }
   html body {
     height: 90%;
     background-color: transparent; }
@@ -214,8 +269,21 @@ html {
         display: flex;
         flex-direction: column;
         margin: 8vh 0;
-        background-color: whitesmoke; }
+        background-color: #ededed; }
     html body .hr-divider {
       background-color: #ff955c; }
     html body .light-gray-shadow {
-      box-shadow: 0 3px 11px #cacaca; }
+      box-shadow: 0 2px 9px #cacaca; }
+    html body .lg-light-gray-shadow {
+      box-shadow: 0 5px 27px #d2d2d2; }
+    html body .contact-link {
+      background-color: #ff955c;
+      margin: 2rem auto;
+      padding: 0.5rem;
+      width: 70%;
+      color: white !important;
+      text-align: center;
+      letter-spacing: 1px;
+      text-decoration: none; }
+    html body .contact-link:hover {
+      background-color: #ff7429; }

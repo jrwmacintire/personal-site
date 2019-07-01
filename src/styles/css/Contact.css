@@ -5,20 +5,21 @@
   display: flex;
   flex-direction: column;
   margin: 3rem auto;
-  padding: 1rem;
-  width: 70vw;
-  height: auto; }
+  padding: 2rem;
+  width: 76vw;
+  height: auto;
+  background-color: whitesmoke; }
   @media (max-width: 449px) {
     .Contact {
       padding: 0.25rem;
       width: 98vw;
-      margin: 2rem auto; } }
+      margin: 1rem auto; } }
   @media (min-width: 960px) {
     .Contact {
-      max-width: 45vw; } }
+      max-width: 48vw; } }
   @media (min-width: 1300px) {
     .Contact {
-      max-width: 30vw; } }
+      max-width: 33vw; } }
   .Contact h1 {
     margin: 1.6rem auto;
     font-weight: bold;
@@ -50,10 +51,12 @@
     padding: 1rem;
     font-size: 1.3rem;
     letter-spacing: 1px;
-    background-color: #0793df; }
+    background-color: #ff955c;
+    border: 0;
+    border-radius: 2px; }
   .Contact button:hover {
-    background-color: #34b4f9;
-    font-size: 1.4rem; }
+    background-color: #f57d3d;
+    letter-spacing: 2px; }
   .Contact div.required-field-notice {
     display: flex; }
     .Contact div.required-field-notice small {

@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 export default class Experience extends Component {
     render() {
         return (
-            <div className="Contact" >
+            <div className="Contact light-gray-shadow" >
                 <h1>Contact</h1>
                 <Form className='Form'>
                   <Form.Group as={Row} controlId="name">

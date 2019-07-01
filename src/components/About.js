@@ -10,13 +10,13 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 export default class About extends Component {
     render() {
         return (
-            <Container className="About container-fluid" >
+            <Container className="About lg-light-gray-shadow" >
                 <Row className='about-bio-row'>
                     <Col xs={10} sm={10} md={8} lg={4} className='about-bio-col'>
                         <div className='about-info-wrapper'>
                             <p>Fullstack Javascript Developer and Designer based in Tucson, Arizona.</p>
                             <p>I am an <b>Amazon Web Services Certified Developer</b> who builds web apps in ReactJS and NodeJS on Serverless and Express server frameworks.</p>
-                            <Link to='/contact' className='about-contact-link light-gray-shadow'>Contact me</Link>
+                            <Link to='/contact' className='contact-link light-gray-shadow'>Contact me</Link>
                         </div>
                     </Col>
                     <Col xs={10} sm={8} md={6} lg={4}>
