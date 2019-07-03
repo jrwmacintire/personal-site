@@ -131,7 +131,6 @@
   .Contact label {
     font-weight: 600;
     letter-spacing: 0.5px;
-    margin: auto;
     padding: 0;
     text-align: right; }
     @media (max-width: 500px) {
@@ -145,6 +144,12 @@
   @media (max-width: 500px) {
     .Contact textarea {
       font-size: 0.8rem; } }
+  .Contact .input-error {
+    border: 1px solid red; }
+  .Contact .input-success {
+    border: 1px solid green; }
+  .Contact .input-warning {
+    border: 1px solid orange; }
   .Contact button {
     width: 100%;
     margin: 1rem auto;

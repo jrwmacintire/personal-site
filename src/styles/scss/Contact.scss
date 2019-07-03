@@ -38,7 +38,7 @@
     label {
         font-weight: 600;
         letter-spacing: 0.5px;
-        margin: auto;
+        // margin: auto;
         padding: 0;
         text-align: right;
 
@@ -63,6 +63,18 @@
         @media (max-width: 500px) {
             font-size: 0.8rem;
         }
+    }
+
+    .input-error {
+        border: 1px solid red;
+    }
+
+    .input-success {
+        border: 1px solid green;
+    }
+
+    .input-warning {
+        border: 1px solid orange;
     }
 
     button {
