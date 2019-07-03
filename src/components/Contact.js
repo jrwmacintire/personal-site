@@ -96,6 +96,7 @@ export default class Contact extends Component {
       mode: "cors",
       cache: "default",
       headers: {
+        "Access-Control-Allow-Origin": "localhost, johnmacintire.com",
         "Content-Type": "application/json"
       },
       redirect: "follow",
