@@ -3,10 +3,10 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import validateEmail from '../scripts/validation/validateEmail';
-import validateName from '../scripts/validation/validateName';
-import validatePhone from '../scripts/validation/validatePhone';
-import validateMessage from '../scripts/validation/validateMessage';
+import validateEmail from "../scripts/validation/validateEmail";
+import validateName from "../scripts/validation/validateName";
+import validatePhone from "../scripts/validation/validatePhone";
+import validateMessage from "../scripts/validation/validateMessage";
 
 export default class Contact extends Component {
   addSuccessLabel = input => {
@@ -36,15 +36,15 @@ export default class Contact extends Component {
   updateFieldLabels = inputs => {
     inputs.forEach(input => {
       const feedbackEl = document.getElementById(`${input.name}-feedback`);
-      if(input.valid) {
+      if (input.valid) {
         this.addSuccessLabel(input);
       } else {
-        if(input.name === 'phone') this.addWarningLabel(input);
+        if (input.name === "phone") this.addWarningLabel(input);
         else this.addErrorLabel(input);
         feedbackEl.innerHTML = input.feedback;
       }
     });
-  }
+  };
 
   validateInputs = inputs => {
     console.log(`%cValidating form inputs...`, "color: lightsalmon");
@@ -53,36 +53,62 @@ export default class Contact extends Component {
     inputs.forEach(input => {
       let result;
       let validatedInput;
-      switch(input.name) {
-        case 'name':
+      switch (input.name) {
+        case "name":
           result = validateName(input.value);
-          validatedInput = {...input, ...result};
+          validatedInput = { ...input, ...result };
           validatedInputs.push(validatedInput);
           break;
-        case 'email':
+        case "email":
           result = validateEmail(input.value);
-          validatedInput = {...input, ...result};
+          validatedInput = { ...input, ...result };
           validatedInputs.push(validatedInput);
           break;
-        case 'phone':
+        case "phone":
           result = validatePhone(input.value);
-          validatedInput = {...input, ...result};
+          validatedInput = { ...input, ...result };
           validatedInputs.push(validatedInput);
           break;
-        case 'message':
+        case "message":
           result = validateMessage(input.value);
-          validatedInput = {...input, ...result};
+          validatedInput = { ...input, ...result };
           validatedInputs.push(validatedInput);
           break;
         default:
           console.log(`Unable to validate field w/ name: ${input.name}`);
       }
     });
-    console.log('%cValidated inputs:\n', 'color: limegreen', validatedInputs);
+    console.log("%cValidated inputs:\n", "color: limegreen", validatedInputs);
     return validatedInputs;
   };
 
-  handleSubmit = event => {
+  postForm = (inputs, url) => {
+    console.log(
+      `%cInputs have been validated and form is ready to be POSTed!`,
+      "color: orange",
+      inputs,
+      "\nurl:",
+      url
+    );
+
+    return fetch(url, {
+      method: "POST",
+      mode: "cors",
+      cache: "default",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      redirect: "follow",
+      referrer: "no-referrer",
+      body: inputs
+    })
+      .then(response => response.json())
+      .then(obj => {
+        this.props.history.push("/thanks");
+      });
+  };
+
+  handleSubmit = async event => {
     event.preventDefault();
     const inputs = document.getElementsByClassName("form-input");
     let inputObjects = [];
@@ -94,8 +120,23 @@ export default class Contact extends Component {
       });
     }
     // console.log(`inputsObjects:`, inputObjects);
+
     const validatedInputs = this.validateInputs(inputObjects);
+    const validInputs = validatedInputs.map(input => {
+      return { name: input.name, valid: input.valid };
+    });
     this.updateFieldLabels(validatedInputs);
+    console.log(
+      "%cvalidInputs:\n",
+      "color: lightpink",
+      validInputs
+    );
+
+    const formUrl =
+      "https://5hgab1z0b4.execute-api.us-west-2.amazonaws.com/dev/contact";
+
+    const inputToJson = JSON.stringify(inputObjects);
+    this.postForm(inputToJson, formUrl);
   };
 
   render() {
@@ -114,7 +155,7 @@ export default class Contact extends Component {
                 placeholder="Name"
                 required={true}
               />
-              <small id='name-feedback'></small>
+              <small id="name-feedback" />
             </Col>
           </Form.Group>
           <Form.Group as={Row} controlId="email">
@@ -128,7 +169,7 @@ export default class Contact extends Component {
                 placeholder="Email"
                 required={true}
               />
-              <small id='email-feedback'></small>
+              <small id="email-feedback" />
             </Col>
           </Form.Group>
           <Form.Group as={Row} controlId="phone">
@@ -141,7 +182,7 @@ export default class Contact extends Component {
                 className="form-input"
                 placeholder="Phone Number"
               />
-              <small id='phone-feedback'></small>
+              <small id="phone-feedback" />
             </Col>
           </Form.Group>
           <Form.Group as={Row} controlId="message">
@@ -157,7 +198,7 @@ export default class Contact extends Component {
                 placeholder="Enter your message here..."
                 required={true}
               />
-              <small id='message-feedback'></small>
+              <small id="message-feedback" />
             </Col>
           </Form.Group>
           <div className="required-field-notice">
