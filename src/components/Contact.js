@@ -96,7 +96,6 @@ export default class Contact extends Component {
       mode: "cors",
       cache: "default",
       headers: {
-        "Access-Control-Allow-Origin": "localhost, johnmacintire.com",
         "Content-Type": "application/json"
       },
       redirect: "follow",
@@ -127,11 +126,7 @@ export default class Contact extends Component {
       return { name: input.name, valid: input.valid };
     });
     this.updateFieldLabels(validatedInputs);
-    console.log(
-      "%cvalidInputs:\n",
-      "color: lightpink",
-      validInputs
-    );
+    console.log("%cvalidInputs:\n", "color: lightpink", validInputs);
 
     const formUrl =
       "https://5hgab1z0b4.execute-api.us-west-2.amazonaws.com/dev/contact";
