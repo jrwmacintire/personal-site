@@ -130,18 +130,14 @@ export default class Contact extends Component {
     const validatedInputs = this.validateInputs(inputObjectsArray);
     let validName = false,
       validEmail = false,
-      validMessage = false;
+      validMessage = false,
+      validPhone = false;
 
     validatedInputs.forEach(input => {
-      if (input.name === "name") {
-        if (input.valid) validName = true;
-      }
-      if (input.name === "email") {
-        if (input.valid) validEmail = true;
-      }
-      if (input.name === "message") {
-        if (input.valid) validMessage = true;
-      }
+      if (input.name === "name" && input.valid) validName = true;
+      if (input.name === "email" && input.valid) validEmail = true;
+      if (input.name === "phone" && input.valid) validPhone = true;
+      if (input.name === "message" && input.valid) validMessage = true;
     });
 
     // Update form fields with styling after validation.
@@ -159,7 +155,7 @@ export default class Contact extends Component {
     // console.log(`inputToJson, stringified:`, inputToJson);
 
     // If required fields are valid, post form to API URL
-    if(validName && validEmail && validMessage) {
+    if(validName && validEmail && validPhone && validMessage) {
       this.postForm(inputToJson, formUrl);
       // return inputToJson;
     } else {
@@ -175,7 +171,7 @@ export default class Contact extends Component {
         <Form id="form" className="Form" method="POST">
           <Form.Group as={Row} controlId="name">
             <Form.Label column sm={3} xs={3}>
-              Full Name * :
+              Full Name :
             </Form.Label>
             <Col sm={9} xs={9}>
               <Form.Control
@@ -189,7 +185,7 @@ export default class Contact extends Component {
           </Form.Group>
           <Form.Group as={Row} controlId="email">
             <Form.Label column sm={3} xs={3}>
-              Email * :
+              Email :
             </Form.Label>
             <Col sm={9} xs={9}>
               <Form.Control
@@ -210,13 +206,14 @@ export default class Contact extends Component {
                 type="phone"
                 className="form-input"
                 placeholder="Phone Number"
+                required={true}
               />
               <small id="phone-feedback" />
             </Col>
           </Form.Group>
           <Form.Group as={Row} controlId="message">
             <Form.Label column sm={3} xs={3}>
-              Message * :
+              Message :
             </Form.Label>
             <Col sm={9} xs={9}>
               <Form.Control
@@ -231,7 +228,7 @@ export default class Contact extends Component {
             </Col>
           </Form.Group>
           <div className="required-field-notice">
-            <small>Fields with an * are required.</small>
+            <small>All fields are required for form submission.</small>
           </div>
           <Form.Group as={Row}>
             <Col>

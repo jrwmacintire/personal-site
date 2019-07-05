@@ -90,6 +90,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+  @media (max-width: 500px) {
+    .Footer {
+      position: relative !important; } }
   .Footer p {
     color: #f9f9ed;
     margin: 0.5rem;
@@ -279,7 +282,7 @@ html {
         font-family: 'Lato', sans-serif;
         display: flex;
         flex-direction: column;
-        margin: 8vh 0;
+        margin: 8vh 0 0;
         background-color: #ededed; }
     html body .hr-divider {
       background-color: #ff955c; }

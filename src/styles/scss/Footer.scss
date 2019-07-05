@@ -7,6 +7,10 @@
     align-items: center;
     flex-direction: column;
 
+    @media (max-width: 500px) {
+        position: relative !important;
+    }
+
     p {
         color: $rgbWhite;
         margin: 0.5rem;
