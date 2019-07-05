@@ -9,6 +9,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Solutions from './components/Solutions';
 import Certifications from './components/Certifications';
+import Thanks from './components/Thanks';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
           <Route path='/contact' component={ Contact } />
           <Route path='/solutions' component={ Solutions } />
           <Route path='/certifications' component={ Certifications } />
+          <Route path='/thanks' component={ Thanks } />
           <Route component={ Error } />
         </Switch>
         <Footer />

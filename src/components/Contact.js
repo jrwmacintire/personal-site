@@ -47,9 +47,9 @@ export default class Contact extends Component {
   };
 
   validateInputs = inputs => {
-    console.log(`%cValidating form inputs...`, "color: lightsalmon");
+    // console.log(`%cValidating form inputs...`, "color: lightsalmon");
     let validatedInputs = [];
-    console.log("inputs:", inputs);
+    // console.log("inputs:", inputs);
     inputs.forEach(input => {
       let result;
       let validatedInput;
@@ -78,18 +78,18 @@ export default class Contact extends Component {
           console.log(`Unable to validate field w/ name: ${input.name}`);
       }
     });
-    console.log("%cValidated inputs:\n", "color: limegreen", validatedInputs);
+    // console.log("%cValidated inputs:\n", "color: limegreen", validatedInputs);
     return validatedInputs;
   };
 
   postForm = (inputs, url) => {
-    console.log(
-      `%cInputs have been validated and form is ready to be POSTed!`,
-      "color: orange",
-      inputs,
-      "\nurl:",
-      url
-    );
+    // console.log(
+    //   `%cInputs have been validated and form is ready to be POSTed!`,
+    //   "color: orange",
+    //   inputs,
+    //   "\nurl:",
+    //   url
+    // );
 
     return fetch(url, {
       method: "POST",
@@ -102,37 +102,70 @@ export default class Contact extends Component {
       referrer: "no-referrer",
       body: inputs
     })
-      .then(response => response.json())
+      .then(response => {
+        console.log(response.json());
+      })
       .then(obj => {
         this.props.history.push("/thanks");
+        // return inputs;
       });
   };
 
-  handleSubmit = async event => {
+  handleSubmit = event => {
     event.preventDefault();
     const inputs = document.getElementsByClassName("form-input");
-    let inputObjects = [];
+
+    // Array of input values in object form for iterating and validating easily.
+    let inputObjectsArray = [];
     for (let i = 0; i < inputs.length; i++) {
       // console.log(inputs[i].value);
-      inputObjects.push({
+      inputObjectsArray.push({
         name: inputs[i].id,
         value: inputs[i].value
       });
     }
-    // console.log(`inputsObjects:`, inputObjects);
+    // console.log(`inputsObjectsArray:`, inputObjectsArray);
 
-    const validatedInputs = this.validateInputs(inputObjects);
-    const validInputs = validatedInputs.map(input => {
-      return { name: input.name, valid: input.valid };
+    // Validating input fields with array of input objects
+    const validatedInputs = this.validateInputs(inputObjectsArray);
+    let validName = false,
+      validEmail = false,
+      validMessage = false;
+
+    validatedInputs.forEach(input => {
+      if (input.name === "name") {
+        if (input.valid) validName = true;
+      }
+      if (input.name === "email") {
+        if (input.valid) validEmail = true;
+      }
+      if (input.name === "message") {
+        if (input.valid) validMessage = true;
+      }
     });
+
+    // Update form fields with styling after validation.
     this.updateFieldLabels(validatedInputs);
-    console.log("%cvalidInputs:\n", "color: lightpink", validInputs);
 
+
+    // Post form data to API Gateway-Lambda endpoint
     const formUrl =
-      "https://5hgab1z0b4.execute-api.us-west-2.amazonaws.com/dev/contact";
+      "https://5hgab1z0b4.execute-api.us-west-2.amazonaws.com/dev/rest/contact";
 
-    const inputToJson = JSON.stringify(inputObjects);
-    this.postForm(inputToJson, formUrl);
+    let inputObject = {};
+    inputObjectsArray.forEach(inputObj => inputObject[inputObj.name] = inputObj.value);
+
+    const inputToJson = JSON.stringify(inputObject);
+    // console.log(`inputToJson, stringified:`, inputToJson);
+
+    // If required fields are valid, post form to API URL
+    if(validName && validEmail && validMessage) {
+      this.postForm(inputToJson, formUrl);
+      // return inputToJson;
+    } else {
+      return { error: `Failed to POST form due to invalid fields - validName: ${validName}, validEmail: ${validEmail}, validMessage: ${validMessage}` }
+    }
+
   };
 
   render() {
