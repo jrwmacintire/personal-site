@@ -3,8 +3,8 @@
 .Contact {
     display: flex;
     flex-direction: column;
-    margin: 3rem auto;
-    padding: 2rem;
+    margin: 6rem auto 7rem;
+    padding: 1.6rem;
     width: 76vw;
     height: auto;
     background-color: whitesmoke;
@@ -12,7 +12,7 @@
     @media (max-width: 449px) {
         padding: 0.25rem;
         width: 98vw;
-        margin: 1.9rem auto;
+        margin: 5rem auto 1rem;
     }
 
     @media (min-width: 960px) {

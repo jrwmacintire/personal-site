@@ -1,34 +1,39 @@
 /* Coolors Exported Palette - coolors.co/00131c-053d5b-f9f9ed-ff5e07-dbd0c9 */
 /* HSL */
 /* RGB */
-.Certifications .certifications-row {
-  display: flex;
-  justify-content: center; }
-  .Certifications .certifications-row .certifications-col {
-    margin: 3rem;
-    padding: 2rem;
-    background-color: whitesmoke; }
-    @media (max-width: 768px) {
-      .Certifications .certifications-row .certifications-col {
-        margin: 1.5rem;
-        padding: 1rem; } }
-    .Certifications .certifications-row .certifications-col h2 {
-      letter-spacing: 1px;
-      font-weight: bold;
-      color: #00111a;
-      margin: 2rem 0;
-      text-align: center; }
-    .Certifications .certifications-row .certifications-col ul {
-      margin: 2rem 0; }
-      @media (max-width: 470px) {
-        .Certifications .certifications-row .certifications-col ul {
-          padding-left: 20px;
-          margin: 1rem 0; } }
-      .Certifications .certifications-row .certifications-col ul li {
-        margin: 1rem;
-        font-size: 1.1rem;
-        line-height: 1.35; }
-        .Certifications .certifications-row .certifications-col ul li a {
-          color: #0793df; }
-        .Certifications .certifications-row .certifications-col ul li small {
-          color: gray; }
+.Certifications {
+  margin: 4rem auto; }
+  @media (max-width: 450px) {
+    .Certifications {
+      margin-bottom: 0; } }
+  .Certifications .certifications-row {
+    display: flex;
+    justify-content: center; }
+    .Certifications .certifications-row .certifications-col {
+      margin: 2rem;
+      padding: 1rem;
+      background-color: whitesmoke; }
+      @media (max-width: 768px) {
+        .Certifications .certifications-row .certifications-col {
+          margin: 1rem;
+          padding: 1rem; } }
+      .Certifications .certifications-row .certifications-col h2 {
+        letter-spacing: 1px;
+        font-weight: bold;
+        color: #00111a;
+        margin: 2rem 0;
+        text-align: center; }
+      .Certifications .certifications-row .certifications-col ul {
+        margin: 2rem 0; }
+        @media (max-width: 470px) {
+          .Certifications .certifications-row .certifications-col ul {
+            padding-left: 20px;
+            margin: 1rem 0; } }
+        .Certifications .certifications-row .certifications-col ul li {
+          margin: 1rem;
+          font-size: 1.1rem;
+          line-height: 1.35; }
+          .Certifications .certifications-row .certifications-col ul li a {
+            color: #0793df; }
+          .Certifications .certifications-row .certifications-col ul li small {
+            color: gray; }

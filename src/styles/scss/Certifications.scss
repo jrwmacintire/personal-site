@@ -1,18 +1,23 @@
 @import './palette.scss';
 
 .Certifications {
+    margin: 4rem auto;
+
+    @media (max-width: 450px) {
+        margin-bottom: 0;
+    }
 
     .certifications-row {
         display: flex;
         justify-content: center;
 
         .certifications-col {
-            margin: 3rem;
-            padding: 2rem;
+            margin: 2rem;
+            padding: 1rem;
             background-color: whitesmoke;
 
             @media (max-width: 768px) {
-                margin: 1.5rem;
+                margin: 1rem;
                 padding: 1rem;
             }
 

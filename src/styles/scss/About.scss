@@ -7,19 +7,16 @@
     flex-direction: column;
     align-items: center;
     background-color: darken(whitesmoke, 3);
-    margin-top: 8vh !important;
-    padding: 3rem;
+    margin: 4rem auto !important;
+    padding: 2rem;
     border: 0.5px solid lighten(lightgray, 8);
 
     @media (max-width: 992px) {
-        margin-top: 0 !important;
+        margin: 4rem !important;
     }
     @media (max-width: 768px) {
-        margin: 2rem auto !important;
-    }
-
-    @media (max-width: 560px) {
-        padding: 0 !important;
+        margin: 4rem auto 0 !important;
+        padding-bottom: 0;
     }
 
     .about-bio-row {
@@ -90,7 +87,7 @@
 
         @media (max-width: 768px) {
             padding: 0.5rem 1.5rem;
-            margin: 2vh auto 5vh;
+            margin: 6vh auto;
         }
 
         // @media (max-width: 991px) {
