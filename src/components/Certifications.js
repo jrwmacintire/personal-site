@@ -10,7 +10,7 @@ export default class Certifications extends Component {
                 <Row className='certifications-row'>
                     <Col xs={12} sm={11} md={10} lg={6} className='certifications-col light-gray-shadow'>
                         <h2>Certifications</h2>
-                        <hr className='hr-divider'></hr>
+                        {/* <hr className='hr-divider'></hr> */}
                         <ul>
                             <li>
                                 <a href='https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2019-06-05&ci=AWS00769670'>Amazon Web Services Developer Certification</a>

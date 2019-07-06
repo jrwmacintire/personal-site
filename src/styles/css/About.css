@@ -3,7 +3,7 @@
 /* RGB */
 .About {
   height: 100%;
-  width: 100%;
+  width: auto !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,14 +13,16 @@
   border: 0.5px solid #e7e7e7; }
   @media (max-width: 768px) {
     .About {
-      margin: 0 auto !important; } }
+      margin: 2rem auto !important; } }
   @media (max-width: 560px) {
     .About {
       padding: 0; } }
   .About .about-bio-row {
     height: auto;
+    width: auto;
     display: flex;
     justify-content: center;
+    margin: auto;
     padding: 0.5rem; }
     @media (max-width: 768px) {
       .About .about-bio-row {
@@ -59,7 +61,7 @@
     justify-content: space-around;
     flex-flow: row wrap;
     padding: 0.25rem;
-    background-color: #e8e8e8; }
+    background-color: #f0f0f0; }
     @media (max-width: 768px) {
       .About .about-social-row {
         padding: 0.5rem 1.5rem;

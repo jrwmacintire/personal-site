@@ -2,7 +2,7 @@
 
 .About {
     height: 100%;
-    width: 100%;
+    width: auto !important;
     // margin: 5rem auto !important;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
     border: 0.5px solid lighten(lightgray, 8);
 
     @media (max-width: 768px) {
-        margin: 0 auto !important;
+        margin: 2rem auto !important;
     }
 
     @media (max-width: 560px) {
@@ -23,10 +23,11 @@
     .about-bio-row {
         height: auto;
         // width: 100%;
+        width: auto;
         display: flex;
         justify-content: center;
         // margin: 12vh auto 3vh;
-        // margin: auto;
+        margin: auto;
         padding: 0.5rem;
         // background-color: darken(whitesmoke, 3);
 
@@ -85,7 +86,7 @@
         justify-content: space-around;
         flex-flow: row wrap;
         padding: 0.25rem;
-        background-color: darken(whitesmoke, 5);
+        background-color: darken(whitesmoke, 2);
 
         @media (max-width: 768px) {
             padding: 0.5rem 1.5rem;
