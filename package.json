@@ -22,9 +22,9 @@
     "scss": "node-sass -w src/styles/scss/ -o src/styles/css/",
     "clean": "rm -rf ./build",
     "clean-build": "npm run clean && npm run build",
-    "sync-bucket": "aws s3 sync ./build s3://new-jrwm3-site --acl public-read",
-    "add-index": "aws s3 cp ./build/index.html s3://new-jrwm3-site/index.html --metadata-directive REPLACE --cache-control max-age=0,no-cache,no-store,must-revalidate --acl public-read",
-    "clean-buckets": "aws s3 rm s3://new-jrwm3-site --recursive --exclude '*' --include 'static/**/*' --include 'precache-manifest.*'",
+    "sync-bucket": "aws s3 sync ./build s3://johnmacintire.com --acl public-read",
+    "add-index": "aws s3 cp ./build/index.html s3://johnmacintire.com/index.html --metadata-directive REPLACE --cache-control max-age=0,no-cache,no-store,must-revalidate --acl public-read",
+    "clean-buckets": "aws s3 rm s3://johnmacintire.com --recursive --exclude '*' --include 'static/**/*' --include 'precache-manifest.*'",
     "deploy-to-s3": "npm run clean-build && npm run clean-buckets && npm run update-s3-buckets"
   },
   "eslintConfig": {
