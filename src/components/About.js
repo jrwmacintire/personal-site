@@ -10,7 +10,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 export default class About extends Component {
     render() {
         return (
-            <div className="About" >
+            <Container className="About" >
                 <Row className='about-bio-row'>
                     <Col xs={10} sm={10} md={8} lg={4} className='about-bio-col'>
                         <div className='about-info-wrapper'>
@@ -36,7 +36,7 @@ export default class About extends Component {
                         <Button className='about-social-media-link' href='https://www.freecodecamp.org/jrwmacintire'> FreeCodeCamp</Button>
                     </Col>
                 </Row>
-            </div>
+            </Container>
         )
     }
 }

@@ -7,7 +7,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap");
 .About {
   height: 100%;
-  width: auto !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,15 +14,17 @@
   margin-top: 8vh !important;
   padding: 3rem;
   border: 0.5px solid #e7e7e7; }
+  @media (max-width: 992px) {
+    .About {
+      margin-top: 0 !important; } }
   @media (max-width: 768px) {
     .About {
       margin: 2rem auto !important; } }
   @media (max-width: 560px) {
     .About {
-      padding: 0; } }
+      padding: 0 !important; } }
   .About .about-bio-row {
     height: auto;
-    width: auto;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -34,7 +35,7 @@
         padding: 0; } }
     @media (max-width: 992px) {
       .About .about-bio-row {
-        margin: 4vh auto; } }
+        margin: 0; } }
     .About .about-bio-row .about-bio-col {
       display: flex;
       flex-direction: column;
@@ -63,8 +64,9 @@
     width: 60%;
     display: flex;
     justify-content: space-around;
-    flex-flow: row wrap;
-    padding: 0.25rem;
+    flex-direction: row;
+    padding: 1rem;
+    margin: 2rem 0;
     background-color: #f0f0f0; }
     @media (max-width: 768px) {
       .About .about-social-row {
@@ -75,7 +77,7 @@
       background-color: #a0c5da;
       border: 1px solid lightgray;
       padding: 1rem;
-      margin: 0.5rem;
+      margin: 1rem auto;
       letter-spacing: 1px; }
       @media (max-width: 576px) {
         .About .about-social-row .about-social-media-link {
@@ -298,7 +300,7 @@ html {
       box-shadow: 0 5px 27px #d2d2d2; }
     html body .contact-link {
       background-color: #ff955c;
-      margin: 2rem auto;
+      margin: 1rem auto;
       padding: 0.5rem;
       width: 70%;
       color: white !important;

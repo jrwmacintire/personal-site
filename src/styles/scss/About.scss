@@ -2,7 +2,6 @@
 
 .About {
     height: 100%;
-    width: auto !important;
     // margin: 5rem auto !important;
     display: flex;
     flex-direction: column;
@@ -12,21 +11,21 @@
     padding: 3rem;
     border: 0.5px solid lighten(lightgray, 8);
 
+    @media (max-width: 992px) {
+        margin-top: 0 !important;
+    }
     @media (max-width: 768px) {
         margin: 2rem auto !important;
     }
 
     @media (max-width: 560px) {
-        padding: 0;
+        padding: 0 !important;
     }
 
     .about-bio-row {
         height: auto;
-        // width: 100%;
-        width: auto;
         display: flex;
         justify-content: center;
-        // margin: 12vh auto 3vh;
         margin: auto;
         padding: 0.5rem;
         // background-color: darken(whitesmoke, 3);
@@ -37,7 +36,7 @@
         }
 
         @media (max-width: 992px) {
-            margin: 4vh auto;
+            margin: 0;
         }
 
         .about-bio-col {
@@ -84,8 +83,9 @@
         width: 60%;
         display: flex;
         justify-content: space-around;
-        flex-flow: row wrap;
-        padding: 0.25rem;
+        flex-direction: row;
+        padding: 1rem;
+        margin: 2rem 0;
         background-color: darken(whitesmoke, 2);
 
         @media (max-width: 768px) {
@@ -93,12 +93,8 @@
             margin: 2vh auto 5vh;
         }
 
-        // .col-lg-4, .col-md-4, .col-sm-4 {
-
-        //     @media (max-width: 768px) {
-        //         display: flex;
-        //         justify-content: center;
-        //     }
+        // @media (max-width: 991px) {
+        //     flex-direction: column;
         // }
 
         .about-social-media-link {
@@ -106,7 +102,7 @@
             background-color: $hslBlueLightGray;
             border: 1px solid lightgray;
             padding: 1rem;
-            margin: 0.5rem;
+            margin: 1rem auto;
             letter-spacing: 1px;
 
             @media (max-width: 576px) {
