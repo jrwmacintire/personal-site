@@ -6,7 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 class Header extends Component {
     render() {
         return (
-            <Navbar collapseOnSelect expand="lg" fixed="top" className="Navbar lg-light-gray-shadow">
+            <Navbar collapseOnSelect expand="lg" fixed="top" className="Navbar">
                 <Link className='navbar-brand' to="/">JohnMacIntire.com</Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 

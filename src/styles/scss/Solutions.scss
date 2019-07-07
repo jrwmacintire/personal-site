@@ -1,6 +1,11 @@
 @import './palette.scss';
 
 .Solutions {
+    margin: 4rem auto;
+
+    @media (max-width: 450px) {
+        margin-bottom: 1rem;
+    }
     
     .solutions-row {
         display: flex;
