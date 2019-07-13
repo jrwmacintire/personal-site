@@ -26,6 +26,13 @@
         color: $hslLightOrange !important;
     }
 
+    a.navbar-brand {
+
+        @media (max-width: 420px) {
+            font-size: 1.5rem;
+        }
+    }
+
     // .navbar-toggler-icon {
     //     color: whitesmoke !important;
     // }

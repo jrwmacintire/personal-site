@@ -4,7 +4,7 @@
 .Contact {
   display: flex;
   flex-direction: column;
-  margin: 6rem auto 7rem;
+  margin: 8rem auto 7rem;
   padding: 1.6rem;
   width: 76vw;
   height: auto;
@@ -13,7 +13,7 @@
     .Contact {
       padding: 0.25rem;
       width: 98vw;
-      margin: 5rem auto 1rem; } }
+      margin: 6rem auto 2rem; } }
   @media (min-width: 960px) {
     .Contact {
       max-width: 48vw; } }

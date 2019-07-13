@@ -1,0 +1,30 @@
+.Portfolio {
+  height: auto;
+  margin: 7rem auto !important; }
+  @media (max-width: 450px) {
+    .Portfolio {
+      margin-bottom: 1rem; } }
+  .Portfolio .portfolio-row {
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+    margin: 2rem auto; }
+    @media (max-width: 768px) {
+      .Portfolio .portfolio-row {
+        margin: 1rem 0; } }
+    .Portfolio .portfolio-row .portfolio-col {
+      margin: 1rem;
+      padding: 2rem;
+      background-color: whitesmoke; }
+      @media (max-width: 768px) {
+        .Portfolio .portfolio-row .portfolio-col {
+          margin: 0.5rem;
+          padding: 2rem 1rem; } }
+      .Portfolio .portfolio-row .portfolio-col h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-align: center;
+        margin: 1rem 0 2rem; }
+      .Portfolio .portfolio-row .portfolio-col h4 {
+        font-weight: 500; }

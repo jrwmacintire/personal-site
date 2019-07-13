@@ -9,6 +9,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Solutions from './components/Solutions';
 import Certifications from './components/Certifications';
+import Portfolio from './components/Portfolio';
 import Thanks from './components/Thanks';
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
           <Route path='/contact' component={ Contact } />
           <Route path='/solutions' component={ Solutions } />
           <Route path='/certifications' component={ Certifications } />
+          <Route path='/portfolio' component={ Portfolio } />
           <Route path='/thanks' component={ Thanks } />
           <Route component={ Error } />
         </Switch>

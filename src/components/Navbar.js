@@ -19,6 +19,9 @@ class Header extends Component {
                             <Link to="/solutions" className='nav-link'>Solutions</Link>
                         </Nav.Item>
                         <Nav.Item>
+                            <Link to='/portfolio' className='nav-link'>Portfolio</Link>
+                        </Nav.Item>
+                        <Nav.Item>
                             <Link to="/certifications" className='nav-link'>Certifications</Link>
                         </Nav.Item>
                     </Nav>

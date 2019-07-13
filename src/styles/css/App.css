@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #ededed;
-  margin: 4rem auto !important;
+  margin: 7rem auto !important;
   padding: 2rem;
   border: 0.5px solid #e7e7e7; }
   @media (max-width: 992px) {
@@ -109,7 +109,7 @@
 .Contact {
   display: flex;
   flex-direction: column;
-  margin: 6rem auto 7rem;
+  margin: 8rem auto 7rem;
   padding: 1.6rem;
   width: 76vw;
   height: auto;
@@ -118,7 +118,7 @@
     .Contact {
       padding: 0.25rem;
       width: 98vw;
-      margin: 5rem auto 1rem; } }
+      margin: 6rem auto 2rem; } }
   @media (min-width: 960px) {
     .Contact {
       max-width: 48vw; } }
@@ -198,6 +198,9 @@
     margin: 0 0.5rem; }
   .Navbar .nav-link:hover {
     color: #f2d1c0 !important; }
+  @media (max-width: 420px) {
+    .Navbar a.navbar-brand {
+      font-size: 1.5rem; } }
 
 /* Coolors Exported Palette - coolors.co/00131c-053d5b-f9f9ed-ff5e07-dbd0c9 */
 /* HSL */
@@ -238,6 +241,37 @@
             color: #0793df; }
           .Certifications .certifications-row .certifications-col ul li small {
             color: gray; }
+
+.Portfolio {
+  height: auto;
+  margin: 7rem auto !important; }
+  @media (max-width: 450px) {
+    .Portfolio {
+      margin-bottom: 1rem; } }
+  .Portfolio .portfolio-row {
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+    margin: 2rem auto; }
+    @media (max-width: 768px) {
+      .Portfolio .portfolio-row {
+        margin: 1rem 0; } }
+    .Portfolio .portfolio-row .portfolio-col {
+      margin: 1rem;
+      padding: 2rem;
+      background-color: whitesmoke; }
+      @media (max-width: 768px) {
+        .Portfolio .portfolio-row .portfolio-col {
+          margin: 0.5rem;
+          padding: 2rem 1rem; } }
+      .Portfolio .portfolio-row .portfolio-col h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-align: center;
+        margin: 1rem 0 2rem; }
+      .Portfolio .portfolio-row .portfolio-col h4 {
+        font-weight: 500; }
 
 /* Coolors Exported Palette - coolors.co/00131c-053d5b-f9f9ed-ff5e07-dbd0c9 */
 /* HSL */

@@ -18,3 +18,6 @@
     margin: 0 0.5rem; }
   .Navbar .nav-link:hover {
     color: #f2d1c0 !important; }
+  @media (max-width: 420px) {
+    .Navbar a.navbar-brand {
+      font-size: 1.5rem; } }

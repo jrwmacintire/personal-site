@@ -28,7 +28,7 @@ export default class Certifications extends Component {
                                 <small>Free Code Camp </small>
                             </li>
                             <li>
-                                <a href='https://www.freecodecamp.org/certification/jrwmacintire/front-end-libraries'>Front End libraries Certification</a>
+                                <a href='https://www.freecodecamp.org/certification/jrwmacintire/front-end-libraries'>Front End Libraries Certification</a>
                                 <br></br>
                                 <small>Free Code Camp </small>
                             </li>
