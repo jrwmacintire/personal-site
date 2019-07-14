@@ -317,6 +317,13 @@
       .Solutions .solutions-row div.solutions-contact-link-wrapper .solutions-contact:hover {
         letter-spacing: 2px; }
 
+.Slideshow {
+  width: 100%;
+  background-color: antiquewhite; }
+
+.Slide {
+  background-color: aquamarine; }
+
 html {
   width: 100%;
   height: 100%;
