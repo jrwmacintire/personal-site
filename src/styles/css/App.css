@@ -109,7 +109,7 @@
 .Contact {
   display: flex;
   flex-direction: column;
-  margin: 8rem auto 7rem;
+  margin: 7rem auto 7rem;
   padding: 1.6rem;
   width: 76vw;
   height: auto;
@@ -206,7 +206,7 @@
 /* HSL */
 /* RGB */
 .Certifications {
-  margin: 4rem auto; }
+  margin: 5rem auto; }
   @media (max-width: 450px) {
     .Certifications {
       margin-bottom: 0; } }
@@ -244,7 +244,7 @@
 
 .Portfolio {
   height: auto;
-  margin: 7rem auto !important; }
+  margin: 4rem auto !important; }
   @media (max-width: 450px) {
     .Portfolio {
       margin-bottom: 1rem; } }
@@ -320,9 +320,6 @@
 .Slideshow {
   width: 100%;
   background-color: antiquewhite; }
-
-.Slide {
-  background-color: aquamarine; }
 
 html {
   width: 100%;
