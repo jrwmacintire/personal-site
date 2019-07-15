@@ -14,7 +14,7 @@
         margin: 1rem 0; } }
     .Portfolio .portfolio-row .portfolio-col {
       margin: 1rem;
-      padding: 2rem;
+      padding: 3rem;
       background-color: whitesmoke; }
       @media (max-width: 768px) {
         .Portfolio .portfolio-row .portfolio-col {

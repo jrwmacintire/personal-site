@@ -1,3 +1,17 @@
 .Slideshow {
-  width: 100%;
-  background-color: antiquewhite; }
+  width: 100%; }
+  .Slideshow .custom-carousel-caption {
+    background-color: gray;
+    padding: 1rem !important; }
+    .Slideshow .custom-carousel-caption div {
+      padding: 1rem; }
+      .Slideshow .custom-carousel-caption div p {
+        margin: 0.5rem; }
+      .Slideshow .custom-carousel-caption div a {
+        text-decoration: none; }
+  .Slideshow .custom-carousel-image {
+    max-width: 100%;
+    margin: auto;
+    border: 1px solid lightgray; }
+  .Slideshow .carousel-indicators {
+    padding: 1rem; }

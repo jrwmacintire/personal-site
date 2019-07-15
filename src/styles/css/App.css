@@ -258,7 +258,7 @@
         margin: 1rem 0; } }
     .Portfolio .portfolio-row .portfolio-col {
       margin: 1rem;
-      padding: 2rem;
+      padding: 3rem;
       background-color: whitesmoke; }
       @media (max-width: 768px) {
         .Portfolio .portfolio-row .portfolio-col {
@@ -318,8 +318,24 @@
         letter-spacing: 2px; }
 
 .Slideshow {
-  width: 100%;
-  background-color: antiquewhite; }
+  width: 100%; }
+  .Slideshow .custom-carousel-caption {
+    background-color: gray;
+    padding: 1rem !important; }
+    .Slideshow .custom-carousel-caption div {
+      padding-bottom: 1.5rem; }
+      .Slideshow .custom-carousel-caption div p {
+        margin: 0.5rem; }
+      .Slideshow .custom-carousel-caption div a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: #f57d3d; }
+  .Slideshow .custom-carousel-image {
+    max-width: 100%;
+    margin: auto;
+    border: 1px solid lightgray; }
+  .Slideshow .carousel-indicators {
+    padding: 1rem; }
 
 html {
   width: 100%;

@@ -28,82 +28,98 @@ export default class Slideshow extends Component {
                 { 
                     name: 'Literatu Essay Competition - Australia',
                     filename: 'LiteratuAusFullscreenMockup',
-                    url: undefined
+                    url: undefined,
+                    specs: 'Test specs, replace, please'
                 },
                 { 
                     name: `MicTV's Band Website`,
                     filename: 'MicTVMockup',
-                    url: 'https://mictvmusic.com/'
+                    url: 'https://mictvmusic.com/',
+                    specs: 'Test specs, replace, please'
                 },
                 { 
                     name: 'MicTVMusic.com - Mobile view',
                     filename: 'MicTVMobileMockup',
-                    url: 'https://mictvmusic.com'
+                    url: 'https://mictvmusic.com',
+                    specs: 'Test specs, replace, please'
                 },
                 { 
-                    name: 'My personal website.',
+                    name: 'JohnMacIntire.com',
                     filename: 'PersonalSiteMockup',
-                    url: undefined
+                    url: undefined,
+                    specs: 'Test specs, replace, please'
                 },
                 { 
-                    name: `My personal website's mobile view.`,
+                    name: `JohnMacIntire.com - mobile view`,
                     filename: 'PersonalSiteMockupMobile',
-                    url: undefined
+                    url: undefined,
+                    specs: 'Test specs, replace, please'
                 },
                 { 
                     name: 'TheClosingCut.com',
                     filename: 'TheClosingCutMockup',
-                    url: 'https://theclosingcut.com'
+                    url: 'https://theclosingcut.com',
+                    specs: 'Test specs, replace, please'
                 },
                 { 
-                    name: '',
+                    name: 'TheClosingCut.com - mobile view',
                     filename: 'TheClosingCutMockupMobile',
-                    url: 'https://theclosingcut.com'
+                    url: 'https://theclosingcut.com',
+                    specs: 'Test specs, replace, please'
                 },
                 { 
                     name: 'United States GDP, made with D3.js',
                     filename: 'GDPGraphD3Mockup',
-                    url: 'https://codepen.io/jrwmacintire/full/xJgRwR'
+                    url: 'https://codepen.io/jrwmacintire/full/xJgRwR',
+                    specs: 'Test specs, replace, please'
                 },
                 { 
                     name: 'Product Treemap, made with D3.js',
                     filename: 'ProductTreemapD3Mockup',
-                    url: 'https://codepen.io/jrwmacintire/full/RBexaB'
+                    url: 'https://codepen.io/jrwmacintire/full/RBexaB',
+                    specs: 'Test specs, replace, please'
                 },
                 { 
                     name: 'Land Surface Temperature Heatmap, made with D3.js',
                     filename: 'HeatmapD3Mockup',
-                    url: 'https://codepen.io/jrwmacintire/full/BPZBpm'
+                    url: 'https://codepen.io/jrwmacintire/full/BPZBpm',
+                    specs: 'Test specs, replace, please'
                 },
                 { 
                     name: 'US Education Chloropleth, made with D3.js',
                     filename: 'EducationChloroplethD3Mockup',
-                    url: 'https://codepen.io/jrwmacintire/full/mjBNLa'
+                    url: 'https://codepen.io/jrwmacintire/full/mjBNLa',
+                    specs: 'Test specs, replace, please'
                 },
                 { 
                     name: 'Doping in Cycling Scatter Plot, made with D3.js',
                     filename: 'ScatterPlotD3Mockup',
-                    url: 'https://codepen.io/jrwmacintire/full/VdgevO'
+                    url: 'https://codepen.io/jrwmacintire/full/VdgevO',
+                    specs: 'Test specs, replace, please'
                 },
                 {
                     name: 'Drum Machine (Codepen.io App)',
                     filename: 'DrumMachineMockup',
-                    url: undefined
+                    url: undefined,
+                    specs: 'Test specs, replace, please'
                 },
                 { 
                     name: 'Tic-Tac-Toe, Codepen.io App',
                     filename: 'TicTacToeMockup',
-                    url: 'https://codepen.io/jrwmacintire/full/jzYqKr'
+                    url: 'https://codepen.io/jrwmacintire/full/jzYqKr',
+                    specs: 'Test specs, replace, please'
                 },
                 { 
                     name: 'Simon, Codepen.io App',
                     filename: 'SimonGameMockup',
-                    url: 'https://codepen.io/jrwmacintire/full/odzbBy'
+                    url: 'https://codepen.io/jrwmacintire/full/odzbBy',
+                    specs: 'Test specs, replace, please'
                 },
                 { 
                     name: 'Markdown App, Codepen.io App',
                     filename: 'MarkdownMockup',
-                    url: 'https://codepen.io/jrwmacintire/full/XqLOdJ'
+                    url: 'https://codepen.io/jrwmacintire/full/XqLOdJ',
+                    specs: 'Test specs, replace, please'
                 },
             ]
         };
@@ -148,14 +164,21 @@ export default class Slideshow extends Component {
             return (
                 <Carousel.Item key={ uuid() }>
                     <img
-                        className="d-block w-100"
+                        className="d-block custom-carousel-image light-gray-shadow"
                         src={ require('../images/mockups/' + mockup.filename + '.png') }
                         alt={ index }
                         key={ uuid() }
                     />
-                    <Carousel.Caption key={ uuid() }>
+                    <Carousel.Caption 
+                        key={ uuid() }
+                        className="custom-carousel-caption">
                         <h3>{ mockup.name }</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <div>
+                            <p><u>Project Details</u>: { mockup.specs }</p>
+                            <p>
+                                <a href={ mockup.url } >{ mockup.url }</a>
+                            </p>
+                        </div>
                     </Carousel.Caption>
                 </Carousel.Item>
             )

@@ -10,7 +10,7 @@ export default class Portfolio extends Component {
         return (
             <Container className="Portfolio" >
                 <Row className='portfolio-row'>
-                    <Col className='portfolio-col light-gray-shadow' xs={12} sm={11} md={11} lg={8}>
+                    <Col className='portfolio-col light-gray-shadow' xs={12} sm={12} md={11} lg={9}>
                         <h2>Portfolio</h2>
                         <Slideshow />
                     </Col>
