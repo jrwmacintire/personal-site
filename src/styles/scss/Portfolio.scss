@@ -21,9 +21,9 @@
             padding: 2rem;
             background-color: whitesmoke;
 
-            @media (max-width: 768px) {
-                margin: 0.5rem;
-                padding: 2rem 1rem;
+            @media (max-width: 400px) {
+                margin: 0;
+                padding: 0;
             }
 
             h2 {

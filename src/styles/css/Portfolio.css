@@ -16,10 +16,10 @@
       margin: 1rem;
       padding: 2rem;
       background-color: whitesmoke; }
-      @media (max-width: 768px) {
+      @media (max-width: 400px) {
         .Portfolio .portfolio-row .portfolio-col {
-          margin: 0.5rem;
-          padding: 2rem 1rem; } }
+          margin: 0;
+          padding: 0; } }
       .Portfolio .portfolio-row .portfolio-col h2 {
         font-size: 2rem;
         font-weight: bold;

@@ -1,45 +1,46 @@
 .Slideshow {
-    width: 100%;
-    // background-color: antiquewhite;
+  width: 100%;
+  background-color: lighten($hslLightGray, 20);
+  margin-bottom: 2rem;
+  padding: 2rem;
 
-    .custom-carousel-caption {
-        // background-color: gray;
-        padding: 1rem !important;
-        position: static !important;
+  .custom-carousel-caption {
+    // background-color: gray;
+    padding: 1rem !important;
+    position: static !important;
 
-        h4 {
-            color: $hslDarkBlue;
-            font-weight: 600;
-            letter-spacing: 1px;
-        }
-
-        div {
-            
-            p {
-                margin: 1rem;
-                color: $hslDarkBlue;
-            }
-
-            a {
-                font-size: 1.2rem;
-                text-decoration: none;
-                color: $hslBrightOrange;
-            }
-        }
+    h4 {
+      color: $hslDarkBlue;
+      font-weight: 600;
+      letter-spacing: 1px;
     }
 
-    .custom-carousel-image {
-        max-width: 100%;
-        max-height: 450px;
-        margin: auto;
-        border: 1px solid lightgray;
-    }
+    div {
+      p {
+        margin: 1rem 0;
+        color: $hslDarkBlue;
+      }
 
-    .carousel-control-prev, .carousel-control-next {
-        
+      a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: $hslBrightOrange;
+      }
     }
+  }
 
-    .carousel-indicators {
-        padding: 1rem;
-    }
+  .carousel-control-next:hover, .carousel-control-prev:hover {
+      background-color: transparentize($color: $hslLightGray, $amount: 0.25);
+  }
+
+  .custom-carousel-image {
+    max-width: 100%;
+    max-height: 450px;
+    margin: auto;
+    border: 1px solid lightgray;
+  }
+
+  .carousel-indicators {
+    padding: 1rem;
+  }
 }

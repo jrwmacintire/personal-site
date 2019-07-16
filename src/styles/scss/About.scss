@@ -56,20 +56,6 @@
                 font-size: 1.1rem;
                 align-items: center;
 
-                .about-contact-link {
-                    background-color: $hslBaseOrange;
-                    margin: 2rem auto;
-                    padding: 0.5rem;
-                    width: 70%;
-                    color: white !important;
-                    text-align: center;
-                    letter-spacing: 1px;
-                    text-decoration: none;
-                }
-
-                .about-contact-link:hover {
-                    background-color: darken($hslBaseOrange, 10);
-                }
             }
             
         }
@@ -79,33 +65,36 @@
         height: auto;
         width: 60%;
         display: flex;
-        justify-content: space-around;
         flex-direction: row;
         padding: 1rem;
         margin: 2rem 0;
         background-color: darken(whitesmoke, 2);
 
         @media (max-width: 768px) {
-            padding: 0.5rem 1.5rem;
-            margin: 6vh auto;
+            // padding: 0.5rem 1.5rem;
+            margin: 1rem 0;
         }
 
-        // @media (max-width: 991px) {
-        //     flex-direction: column;
-        // }
+        @media (max-width: 992px) {
+            flex-direction: column;
+            padding: 1rem;
+        }
+
+        .col {
+            padding: 0;
+
+            a {
+                width: 100%;
+            }
+        }
 
         .about-social-media-link {
             border-radius: 1px;
             background-color: $hslBlueLightGray;
             border: 1px solid lightgray;
             padding: 1rem;
-            margin: 1rem auto;
+            // margin: 0.5rem auto;
             letter-spacing: 1px;
-
-            @media (max-width: 576px) {
-                padding: 0.5rem 1rem;
-                margin: 0.5rem auto;
-            }
         }
 
         .about-social-media-link:hover {

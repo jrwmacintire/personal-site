@@ -46,41 +46,31 @@
         flex-flow: column nowrap;
         font-size: 1.1rem;
         align-items: center; }
-        .About .about-bio-row .about-bio-col .about-info-wrapper .about-contact-link {
-          background-color: #ff955c;
-          margin: 2rem auto;
-          padding: 0.5rem;
-          width: 70%;
-          color: white !important;
-          text-align: center;
-          letter-spacing: 1px;
-          text-decoration: none; }
-        .About .about-bio-row .about-bio-col .about-info-wrapper .about-contact-link:hover {
-          background-color: #ff7429; }
   .About .about-social-row {
     height: auto;
     width: 60%;
     display: flex;
-    justify-content: space-around;
     flex-direction: row;
     padding: 1rem;
     margin: 2rem 0;
     background-color: #f0f0f0; }
     @media (max-width: 768px) {
       .About .about-social-row {
-        padding: 0.5rem 1.5rem;
-        margin: 6vh auto; } }
+        margin: 1rem 0; } }
+    @media (max-width: 992px) {
+      .About .about-social-row {
+        flex-direction: column;
+        padding: 1rem; } }
+    .About .about-social-row .col {
+      padding: 0; }
+      .About .about-social-row .col a {
+        width: 100%; }
     .About .about-social-row .about-social-media-link {
       border-radius: 1px;
       background-color: #a0c5da;
       border: 1px solid lightgray;
       padding: 1rem;
-      margin: 1rem auto;
       letter-spacing: 1px; }
-      @media (max-width: 576px) {
-        .About .about-social-row .about-social-media-link {
-          padding: 0.5rem 1rem;
-          margin: 0.5rem auto; } }
     .About .about-social-row .about-social-media-link:hover {
       background-color: #7bafcc; }
 
@@ -260,10 +250,10 @@
       margin: 1rem;
       padding: 2rem;
       background-color: whitesmoke; }
-      @media (max-width: 768px) {
+      @media (max-width: 400px) {
         .Portfolio .portfolio-row .portfolio-col {
-          margin: 0.5rem;
-          padding: 2rem 1rem; } }
+          margin: 0;
+          padding: 0; } }
       .Portfolio .portfolio-row .portfolio-col h2 {
         font-size: 2rem;
         font-weight: bold;
@@ -318,7 +308,10 @@
         letter-spacing: 2px; }
 
 .Slideshow {
-  width: 100%; }
+  width: 100%;
+  background-color: #eceaea;
+  margin-bottom: 2rem;
+  padding: 2rem; }
   .Slideshow .custom-carousel-caption {
     padding: 1rem !important;
     position: static !important; }
@@ -327,12 +320,14 @@
       font-weight: 600;
       letter-spacing: 1px; }
     .Slideshow .custom-carousel-caption div p {
-      margin: 1rem;
+      margin: 1rem 0;
       color: #00111a; }
     .Slideshow .custom-carousel-caption div a {
       font-size: 1.2rem;
       text-decoration: none;
       color: #f57d3d; }
+  .Slideshow .carousel-control-next:hover, .Slideshow .carousel-control-prev:hover {
+    background-color: rgba(187, 183, 180, 0.75); }
   .Slideshow .custom-carousel-image {
     max-width: 100%;
     max-height: 450px;
@@ -365,12 +360,15 @@ html {
       box-shadow: 0 5px 27px #d2d2d2; }
     html body .contact-link {
       background-color: #ff955c;
-      margin: 2rem auto;
+      margin: 1rem auto 0;
       padding: 1rem;
       width: 70%;
       color: white !important;
       text-align: center;
       letter-spacing: 1px;
       text-decoration: none; }
+      @media (max-width: 992px) {
+        html body .contact-link {
+          margin: 1rem auto 2rem; } }
     html body .contact-link:hover {
       background-color: #ff7429; }

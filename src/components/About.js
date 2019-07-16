@@ -19,20 +19,20 @@ export default class About extends Component {
                             <Link to='/contact' className='contact-link light-gray-shadow'>Contact me</Link>
                         </div>
                     </Col>
-                    <Col xs={10} sm={8} md={6} lg={4}>
+                    <Col xs={10} sm={8} md={7} lg={4}>
                         <div className='about-img-wrapper light-gray-shadow'>
-                            <img src={ Portrait } className='img-fluid' alt='Kiama, New South Wales, Australia' />
+                            <img src={ Portrait } className='img-fluid light-gray-shadow' alt='Kiama, New South Wales, Australia' />
                         </div>
                     </Col>
                 </Row>
                 <Row className='about-social-row light-gray-shadow'>
-                    <Col sm='true' md='true' lg='true'>
+                    <Col>
                         <Button className='about-social-media-link' href='https://www.linkedin.com/in/john-macintire/'><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon> LinkedIn</Button>
                     </Col>
-                    <Col sm='true' md='true' lg='true'>
+                    <Col>
                         <Button className='about-social-media-link' href='https://github.com/jrwmacintire'><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> Github</Button>
                     </Col>
-                    <Col sm='true' md='true' lg='true'>
+                    <Col>
                         <Button className='about-social-media-link' href='https://www.freecodecamp.org/jrwmacintire'> FreeCodeCamp</Button>
                     </Col>
                 </Row>

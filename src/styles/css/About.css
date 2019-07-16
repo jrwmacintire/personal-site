@@ -42,40 +42,30 @@
         flex-flow: column nowrap;
         font-size: 1.1rem;
         align-items: center; }
-        .About .about-bio-row .about-bio-col .about-info-wrapper .about-contact-link {
-          background-color: #ff955c;
-          margin: 2rem auto;
-          padding: 0.5rem;
-          width: 70%;
-          color: white !important;
-          text-align: center;
-          letter-spacing: 1px;
-          text-decoration: none; }
-        .About .about-bio-row .about-bio-col .about-info-wrapper .about-contact-link:hover {
-          background-color: #ff7429; }
   .About .about-social-row {
     height: auto;
     width: 60%;
     display: flex;
-    justify-content: space-around;
     flex-direction: row;
     padding: 1rem;
     margin: 2rem 0;
     background-color: #f0f0f0; }
     @media (max-width: 768px) {
       .About .about-social-row {
-        padding: 0.5rem 1.5rem;
-        margin: 6vh auto; } }
+        margin: 1rem 0; } }
+    @media (max-width: 992px) {
+      .About .about-social-row {
+        flex-direction: column;
+        padding: 1rem; } }
+    .About .about-social-row .col {
+      padding: 0; }
+      .About .about-social-row .col a {
+        width: 100%; }
     .About .about-social-row .about-social-media-link {
       border-radius: 1px;
       background-color: #a0c5da;
       border: 1px solid lightgray;
       padding: 1rem;
-      margin: 1rem auto;
       letter-spacing: 1px; }
-      @media (max-width: 576px) {
-        .About .about-social-row .about-social-media-link {
-          padding: 0.5rem 1rem;
-          margin: 0.5rem auto; } }
     .About .about-social-row .about-social-media-link:hover {
       background-color: #7bafcc; }
