@@ -9,13 +9,13 @@
         "name": "MicTVMusic.com",
         "filename": "MicTVMockup",
         "url": "https://mictvmusic.com",
-        "specs": "React, React-Router, Custom drawings, AWS Lambda, AWS API Gateway, AWS S3, AWS Cloudfront, GitHub/Git CLI, etc."
+        "specs": "React, React-Router, hand-drawings, AWS Lambda, AWS API Gateway, AWS S3, AWS Cloudfront, GitHub/Git CLI, etc."
     },
     { 
         "name": "MicTVMusic.com - Mobile view",
         "filename": "MicTVMobileMockup",
         "url": "https://mictvmusic.com",
-        "specs": "React, React-Router, Custom drawings, AWS Lambda, AWS API Gateway, AWS S3, AWS Cloudfront, GitHub/Git CLI, etc."
+        "specs": "React, React-Router, hand-drawings, AWS Lambda, AWS API Gateway, AWS S3, AWS Cloudfront, GitHub/Git CLI, etc."
     },
     { 
         "name": "JohnMacIntire.com",
