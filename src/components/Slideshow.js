@@ -1,19 +1,9 @@
 import React, { Component } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
 import uuid from 'uuid/v4';
 
-// import Container from 'react-bootstrap/Container';
-// import DrumMachineMockup from '../images/mockups/DrumMachineMockup.png';
-// import LiteratuAusFullMockup from '../images/mockups/LiteratuAusFullscreenMockup.png';
-// import MarkdownMockup from '../images/mockups/MarkdownMockup.png';
-// import MicTVMockup from '../images/mockups/MicTVMockup.png';
-// import MicTVMockupMobile from '../images/mockups/MicTVMobileMockup.png';
-// import PersonalSiteMobileMockup from '../images/mockups/PersonalSiteMockupMobile.png';
-// import PersonalSiteMockup from '../images/mockups/PersonalSiteMockup.png';
-// import TheClosingCutMockupMobile from '../images/mockups/TheClosingCutMockupMobile.png';
-// import TheClosingCutMockup from '../images/mockups/TheClosingCutMockup.png';
-// import Slide from './Slide';
-
-import Carousel from 'react-bootstrap/Carousel';
+// Portfolio Mockup data
+import MockupData from '../data/mockupData.json';
 
 export default class Slideshow extends Component {
 
@@ -24,105 +14,14 @@ export default class Slideshow extends Component {
         this.state = {
             index: 0,
             direction: null,
-            mockups: [
-                { 
-                    name: 'Literatu Essay Competition - Australia',
-                    filename: 'LiteratuAusFullscreenMockup',
-                    url: undefined,
-                    specs: 'Test specs, replace, please'
-                },
-                { 
-                    name: `MicTV's Band Website`,
-                    filename: 'MicTVMockup',
-                    url: 'https://mictvmusic.com/',
-                    specs: 'Test specs, replace, please'
-                },
-                { 
-                    name: 'MicTVMusic.com - Mobile view',
-                    filename: 'MicTVMobileMockup',
-                    url: 'https://mictvmusic.com',
-                    specs: 'Test specs, replace, please'
-                },
-                { 
-                    name: 'JohnMacIntire.com',
-                    filename: 'PersonalSiteMockup',
-                    url: undefined,
-                    specs: 'Test specs, replace, please'
-                },
-                { 
-                    name: `JohnMacIntire.com - mobile view`,
-                    filename: 'PersonalSiteMockupMobile',
-                    url: undefined,
-                    specs: 'Test specs, replace, please'
-                },
-                { 
-                    name: 'TheClosingCut.com',
-                    filename: 'TheClosingCutMockup',
-                    url: 'https://theclosingcut.com',
-                    specs: 'Test specs, replace, please'
-                },
-                { 
-                    name: 'TheClosingCut.com - mobile view',
-                    filename: 'TheClosingCutMockupMobile',
-                    url: 'https://theclosingcut.com',
-                    specs: 'Test specs, replace, please'
-                },
-                { 
-                    name: 'United States GDP, made with D3.js',
-                    filename: 'GDPGraphD3Mockup',
-                    url: 'https://codepen.io/jrwmacintire/full/xJgRwR',
-                    specs: 'Test specs, replace, please'
-                },
-                { 
-                    name: 'Product Treemap, made with D3.js',
-                    filename: 'ProductTreemapD3Mockup',
-                    url: 'https://codepen.io/jrwmacintire/full/RBexaB',
-                    specs: 'Test specs, replace, please'
-                },
-                { 
-                    name: 'Land Surface Temperature Heatmap, made with D3.js',
-                    filename: 'HeatmapD3Mockup',
-                    url: 'https://codepen.io/jrwmacintire/full/BPZBpm',
-                    specs: 'Test specs, replace, please'
-                },
-                { 
-                    name: 'US Education Chloropleth, made with D3.js',
-                    filename: 'EducationChloroplethD3Mockup',
-                    url: 'https://codepen.io/jrwmacintire/full/mjBNLa',
-                    specs: 'Test specs, replace, please'
-                },
-                { 
-                    name: 'Doping in Cycling Scatter Plot, made with D3.js',
-                    filename: 'ScatterPlotD3Mockup',
-                    url: 'https://codepen.io/jrwmacintire/full/VdgevO',
-                    specs: 'Test specs, replace, please'
-                },
-                {
-                    name: 'Drum Machine (Codepen.io App)',
-                    filename: 'DrumMachineMockup',
-                    url: undefined,
-                    specs: 'Test specs, replace, please'
-                },
-                { 
-                    name: 'Tic-Tac-Toe, Codepen.io App',
-                    filename: 'TicTacToeMockup',
-                    url: 'https://codepen.io/jrwmacintire/full/jzYqKr',
-                    specs: 'Test specs, replace, please'
-                },
-                { 
-                    name: 'Simon, Codepen.io App',
-                    filename: 'SimonGameMockup',
-                    url: 'https://codepen.io/jrwmacintire/full/odzbBy',
-                    specs: 'Test specs, replace, please'
-                },
-                { 
-                    name: 'Markdown App, Codepen.io App',
-                    filename: 'MarkdownMockup',
-                    url: 'https://codepen.io/jrwmacintire/full/XqLOdJ',
-                    specs: 'Test specs, replace, please'
-                },
-            ]
+            mockups: []
         };
+    }
+
+    componentDidMount() {
+        this.setState({
+            mockups: [...MockupData]
+        });
     }
 
     handleSelect(selectedIndex, event) {
@@ -163,23 +62,25 @@ export default class Slideshow extends Component {
         const slides = mockups.map((mockup, index) => {
             return (
                 <Carousel.Item key={ uuid() }>
+                    <Carousel.Caption 
+                        key={ uuid() }
+                        className="custom-carousel-caption">
+                        <h4>{ mockup.name }</h4>
+                        <div>
+                            <p>Built with { mockup.specs }</p>
+                            <p>
+                                { mockup.url !== 'undefined' && // If the 'url' aren't 'undefined'
+                                    <a href={ mockup.url } >{ mockup.url.substring(8, mockup.url.length) }</a> // Display 'url'
+                                }
+                            </p>
+                        </div>
+                    </Carousel.Caption>
                     <img
                         className="d-block custom-carousel-image light-gray-shadow"
                         src={ require('../images/mockups/' + mockup.filename + '.png') }
                         alt={ index }
                         key={ uuid() }
                     />
-                    <Carousel.Caption 
-                        key={ uuid() }
-                        className="custom-carousel-caption">
-                        <h3>{ mockup.name }</h3>
-                        <div>
-                            <p><u>Project Details</u>: { mockup.specs }</p>
-                            <p>
-                                <a href={ mockup.url } >{ mockup.url }</a>
-                            </p>
-                        </div>
-                    </Carousel.Caption>
                 </Carousel.Item>
             )
         });

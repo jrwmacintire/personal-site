@@ -1,0 +1,98 @@
+[
+    { 
+        "name": "Literatu Essay Competition - Australia",
+        "filename": "LiteratuAusFullscreenMockup",
+        "url": "undefined",
+        "specs": "HTML5 and CSS3."
+    },
+    { 
+        "name": "MicTVMusic.com",
+        "filename": "MicTVMockup",
+        "url": "https://mictvmusic.com",
+        "specs": "React, React-Router, Custom drawings, AWS Lambda, AWS API Gateway, AWS S3, AWS Cloudfront, GitHub/Git CLI, etc."
+    },
+    { 
+        "name": "MicTVMusic.com - Mobile view",
+        "filename": "MicTVMobileMockup",
+        "url": "https://mictvmusic.com",
+        "specs": "React, React-Router, Custom drawings, AWS Lambda, AWS API Gateway, AWS S3, AWS Cloudfront, GitHub/Git CLI, etc."
+    },
+    { 
+        "name": "JohnMacIntire.com",
+        "filename": "PersonalSiteMockup",
+        "url": "undefined",
+        "specs": "React, React-Router, React Bootstrap, AWS Lambda, AWS API Gateway, AWS S3, AWS Cloudfront, GitHub/Git CLI, etc."
+    },
+    { 
+        "name": "JohnMacIntire.com - mobile view",
+        "filename": "PersonalSiteMockupMobile",
+        "url": "undefined",
+        "specs": "React, React-Router, React Bootstrap, AWS Lambda, AWS API Gateway, AWS S3, AWS Cloudfront, GitHub/Git CLI, etc."
+    },
+    { 
+        "name": "TheClosingCut.com",
+        "filename": "TheClosingCutMockup",
+        "url": "https://theclosingcut.com",
+        "specs": "HTML5, CSS3, AWS Lambda, AWS API Gateway, AWS S3, GitHub, etc."
+    },
+    { 
+        "name": "TheClosingCut.com - mobile view",
+        "filename": "TheClosingCutMockupMobile",
+        "url": "https://theclosingcut.com",
+        "specs": "HTML5, CSS3, AWS Lambda, AWS API Gateway, AWS S3, GitHub, etc."
+    },
+    { 
+        "name": "United States GDP Bar Graph",
+        "filename": "GDPGraphD3Mockup",
+        "url": "https://codepen.io/jrwmacintire/full/xJgRwR",
+        "specs": "D3.js / JavaScript, HTML5, CSS3."
+    },
+    { 
+        "name": "Product Treemap",
+        "filename": "ProductTreemapD3Mockup",
+        "url": "https://codepen.io/jrwmacintire/full/RBexaB",
+        "specs": "D3.js / JavaScript, HTML5, CSS3."
+    },
+    { 
+        "name": "Land Surface Temperature Heatmap",
+        "filename": "HeatmapD3Mockup",
+        "url": "https://codepen.io/jrwmacintire/full/BPZBpm",
+        "specs": "D3.js / JavaScript, HTML5, CSS3."
+    },
+    { 
+        "name": "US Education Chloropleth",
+        "filename": "EducationChloroplethD3Mockup",
+        "url": "https://codepen.io/jrwmacintire/full/mjBNLa",
+        "specs": "D3.js / JavaScript, HTML5, CSS3."
+    },
+    { 
+        "name": "Doping in Cycling Scatter Plot",
+        "filename": "ScatterPlotD3Mockup",
+        "url": "https://codepen.io/jrwmacintire/full/VdgevO",
+        "specs": "D3.js / JavaScript, HTML5, CSS3."
+    },
+    {
+        "name": "Drum Machine (Codepen.io App)",
+        "filename": "DrumMachineMockup",
+        "url": "undefined",
+        "specs": "HTML5, CSS3, and JavaScript."
+    },
+    { 
+        "name": "Tic-Tac-Toe, Codepen.io App",
+        "filename": "TicTacToeMockup",
+        "url": "https://codepen.io/jrwmacintire/full/jzYqKr",
+        "specs": "HTML5, CSS3, and JavaScript."
+    },
+    { 
+        "name": "Simon, Codepen.io App",
+        "filename": "SimonGameMockup",
+        "url": "https://codepen.io/jrwmacintire/full/odzbBy",
+        "specs": "HTML5, CSS3, and JavaScript."
+    },
+    { 
+        "name": "Markdown App, Codepen.io App",
+        "filename": "MarkdownMockup",
+        "url": "https://codepen.io/jrwmacintire/full/XqLOdJ",
+        "specs": "HTML5, CSS3, and JavaScript."
+    }
+]
